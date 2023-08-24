@@ -90,7 +90,7 @@ const aboutData = [
 
 function index() {
   return (
-    <div>index</div>
+    <div>about</div>
   )
 }
 

@@ -30,7 +30,7 @@ function Home() {
             temporibus.
           </p>
           {/* button */}
-          <div className="flex justify-center xl:hidden">
+          <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
           </div>
         </div>
