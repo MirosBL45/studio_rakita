@@ -1,9 +1,18 @@
-import React from 'react'
+// next image
+import Image from "next/image";
 
 function Avatar() {
   return (
-    <div>Avatar</div>
-  )
+    <div className="hidden xl:flex xl:max-w-none">
+      <Image
+        src={"/avatar.png"}
+        width={737}
+        height={678}
+        alt="avatar"
+        className="translate-z-0 w-full h-full"
+      />
+    </div>
+  );
 }
 
-export default Avatar
+export default Avatar;
