@@ -1,9 +1,9 @@
 import React from 'react'
 
-function index() {
+function Services() {
   return (
     <div>services</div>
   )
 }
 
-export default index
+export default Services

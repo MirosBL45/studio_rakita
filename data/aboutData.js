@@ -17,7 +17,7 @@ import {
 
 
 //  data
-const aboutData = [
+export const aboutData = [
   {
     title: "skills",
     info: [

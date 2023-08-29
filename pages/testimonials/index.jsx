@@ -1,9 +1,9 @@
 import React from 'react'
 
-function index() {
+function Testimonials() {
   return (
     <div>testimonials</div>
   )
 }
 
-export default index
+export default Testimonials

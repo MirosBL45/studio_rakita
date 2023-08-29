@@ -1,9 +1,9 @@
 import React from 'react'
 
-function index() {
+function Work() {
   return (
     <div>work</div>
   )
 }
 
-export default index
+export default Work
