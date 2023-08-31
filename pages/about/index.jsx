@@ -1,16 +1,16 @@
-import { aboutData } from "../../data/aboutData";
-import { useState } from "react";
+import { aboutData } from '../../data/aboutData';
+import { useState } from 'react';
 
 // components
-import Avatar from "../../components/Avatar";
-import Circles from "../../components/Circles";
+import Avatar from '../../components/Avatar';
+import Circles from '../../components/Circles';
 
 // framer motion
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
 
 // counter
-import CountUp from "react-countup";
+import CountUp from 'react-countup';
 
 function About() {
   const [mainIndex, setMainIndex] = useState(0);
@@ -20,7 +20,7 @@ function About() {
       <Circles />
       {/* avatar img */}
       <motion.div
-        variants={fadeIn("right", 0.2)}
+        variants={fadeIn('right', 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
@@ -32,7 +32,7 @@ function About() {
         {/* text part */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
-            variants={fadeIn("right", 0.2)}
+            variants={fadeIn('right', 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -42,19 +42,19 @@ function About() {
             magnificent designs.
           </motion.h2>
           <motion.p
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn('right', 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
             className="text-[14px] md:text-xl max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing a sa developer. Since then, I've
+            10 years ago, I began freelancing a sa developer. Since then, I have
             done remote work for agencies, consulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
           {/* counters */}
           <motion.div
-            variants={fadeIn("right", 0.6)}
+            variants={fadeIn('right', 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -102,7 +102,7 @@ function About() {
         </div>
         {/* info - cards in about section */}
         <motion.div
-          variants={fadeIn("left", 0.4)}
+          variants={fadeIn('left', 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -117,7 +117,7 @@ function About() {
                 key={itemIndex}
                 className={`${
                   mainIndex === itemIndex &&
-                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                  'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
                 } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => {
                   setMainIndex(itemIndex);
