@@ -36,7 +36,7 @@ function ServiceSlider() {
     >
       {serviceData.map((item, itemIndex) => (
         <SwiperSlide key={itemIndex}>
-          <div>
+          <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6">
             {/* icon */}
             <div>{item.icon}</div>
             {/* title & description */}
