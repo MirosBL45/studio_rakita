@@ -1,15 +1,22 @@
-'use client'
+"use client";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
-function HeadMeta() {
-  const [language, setLanguage] = useState('srb');
+function HeadMeta({language}) {
+  const router = useRouter();
+
+  useEffect(() => {
+    document.title = `Studio Rakita | ${
+      language === "eng" ? "Record event" : "Snimite dogadjaj"
+    }`;
+  }, [language, router.pathname]);
 
   return (
     <>
       <Head>
         <meta name="Description" content="Snimite Vase dogadjaje" />
-        <title>Studio Rakita | {language === 'eng' ? 'Record event' : 'Snimite dogadjaj'}</title>
+        {/* <title>Studio Rakita | Record event</title> */}
         <link rel="icon" href="/t-avt-1.png" />
       </Head>
     </>
