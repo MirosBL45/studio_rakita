@@ -1,14 +1,16 @@
-"use client";
-import Head from "next/head";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+'use client';
+import Head from 'next/head';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { useLanguage } from './LanguageContext';
 
-function HeadMeta({language}) {
+function HeadMeta() {
+  const { language } = useLanguage();
   const router = useRouter();
 
   useEffect(() => {
     document.title = `Studio Rakita | ${
-      language === "eng" ? "Record event" : "Snimite dogadjaj"
+      language === 'eng' ? 'Record event' : 'Snimite dogadjaj'
     }`;
   }, [language, router.pathname]);
 
