@@ -12,7 +12,10 @@ import { fadeIn } from '../../variants';
 // counter
 import CountUp from 'react-countup';
 
+import { useLanguage } from '../../components/LanguageContext';
+
 function About() {
+  const { language } = useLanguage();
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
@@ -38,8 +41,17 @@ function About() {
             exit="hidden"
             className="text-xl mb-3 md:h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            {language === 'eng' ? (
+              <div>
+                Captivating <span className="text-accent">stories</span> birth
+                magnificent designs.
+              </div>
+            ) : (
+              <div>
+                Pravljenje <span className="text-accent">sjajnih</span> prica o
+                vidu.
+              </div>
+            )}
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
