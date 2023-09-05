@@ -10,34 +10,43 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // swiper styles
 import "swiper/css";
-import "swiper/css/free-mode";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // required modules
-import { Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 function TestimonialSlider() {
   return (
     <Swiper
-      spaceBetween={10}
+      // navigation={true}
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]"
+      modules={[Navigation, Pagination]}
+      className="h-[400px]"
     >
       {testimonialData.map((person, slideIndex) => (
         <SwiperSlide key={slideIndex}>
           <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16">
             {/* avatar, name, position */}
             <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
-              <div>
+              <div className="flex flex-col justify-center text-center">
                 {/* avatar */}
-                <div>avatar</div>
+                <div className="mb-2 mx-auto">
+                  <Image
+                    src={person.image}
+                    width={100}
+                    height={100}
+                    alt={person.name}
+                  />
+                </div>
                 {/* name */}
-                <div>name</div>
+                <div className="text-lg">{person.name}</div>
                 {/* position */}
-                <div>position</div>
+                <div className="text-[12px] uppercase font-extralight tracking-widest">
+                  {person.position}
+                </div>
               </div>
             </div>
             {/* quote & message */}
