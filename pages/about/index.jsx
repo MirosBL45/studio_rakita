@@ -1,18 +1,18 @@
-import { aboutData } from '../../data/aboutData';
-import { useState } from 'react';
+import { aboutData } from "../../data/aboutData";
+import { useState } from "react";
 
 // components
-import Avatar from '../../components/Avatar';
-import Circles from '../../components/Circles';
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
 
 // framer motion
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 // counter
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 
-import { useLanguage } from '../../components/LanguageContext';
+import { useLanguage } from "../../components/LanguageContext";
 
 function About() {
   const { language } = useLanguage();
@@ -23,7 +23,7 @@ function About() {
       <Circles />
       {/* avatar img */}
       <motion.div
-        variants={fadeIn('right', 0.2)}
+        variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
@@ -35,26 +35,24 @@ function About() {
         {/* text part */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
-            variants={fadeIn('right', 0.2)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
             className="text-xl mb-3 md:h2"
           >
-            {language === 'eng' ? (
+            {language === "eng" ? (
               <div>
-                Captivating <span className="text-accent">stories</span> birth
-                magnificent designs.
+                Captivating <span className="text-accent">stories</span> birth magnificent designs.
               </div>
             ) : (
               <div>
-                Pravljenje <span className="text-accent">sjajnih</span> prica o
-                vidu.
+                Pravljenje <span className="text-accent">sjajnih</span> prica o snimanju.
               </div>
             )}
           </motion.h2>
           <motion.p
-            variants={fadeIn('right', 0.4)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -66,7 +64,7 @@ function About() {
           </motion.p>
           {/* counters */}
           <motion.div
-            variants={fadeIn('right', 0.6)}
+            variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -114,7 +112,7 @@ function About() {
         </div>
         {/* info - cards in about section */}
         <motion.div
-          variants={fadeIn('left', 0.4)}
+          variants={fadeIn("left", 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -129,7 +127,7 @@ function About() {
                 key={itemIndex}
                 className={`${
                   mainIndex === itemIndex &&
-                  'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                 } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => {
                   setMainIndex(itemIndex);
