@@ -3,6 +3,8 @@ import TestimonialSlider from "../../components/TestimonialSlider";
 
 // framer-motion
 import { motion } from "framer-motion";
+
+// variants
 import { fadeIn } from "../../variants";
 
 function Testimonials() {

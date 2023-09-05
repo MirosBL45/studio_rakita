@@ -5,6 +5,8 @@ import Circles from '../../components/Circles';
 
 // framer-motion
 import { motion } from 'framer-motion';
+
+// variants
 import { fadeIn } from '../../variants';
 
 function Services() {
