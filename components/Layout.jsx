@@ -14,12 +14,7 @@ import Header from './Header';
 import TopLeftImg from './TopLeftImg';
 import Head from './Head';
 
-import { useState } from 'react';
-
 function Layout({ children }) {
-  // const [language, setLanguage] = useState("eng");
-  // language={language}
-
   return (
     <div
       className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}

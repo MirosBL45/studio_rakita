@@ -19,7 +19,7 @@ import { Navigation, Pagination } from "swiper";
 function TestimonialSlider() {
   return (
     <Swiper
-      // navigation={true}
+      navigation={true}
       pagination={{
         clickable: true,
       }}
