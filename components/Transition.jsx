@@ -27,8 +27,8 @@ function Transition() {
         animate="animate"
         exit="exit"
         transition={{
-          delay: 0.1,
-          duration: 0.4,
+          delay: 0.05,
+          duration: 0.3,
           ease: "easeInOut",
         }}
       ></motion.div>
