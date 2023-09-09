@@ -11,7 +11,11 @@ import { fadeIn } from '../../variants';
 import emailjs from '@emailjs/browser';
 import { useState, useRef } from 'react';
 
+// LanguageContext
+import { useLanguage } from '../../components/LanguageContext';
+
 function Contact() {
+  const { language } = useLanguage();
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
 
@@ -84,7 +88,7 @@ function Contact() {
                 name="user_email"
                 type="email"
                 placeholder="email"
-                className="input"
+                className="inputEmail"
               />
             </div>
             <input
@@ -96,7 +100,7 @@ function Contact() {
             <textarea
               name="message"
               className="textarea"
-              placeholder="message"
+              placeholder="Message"
             ></textarea>
             <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
