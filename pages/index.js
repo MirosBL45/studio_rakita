@@ -9,7 +9,12 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 
+// LanguageContext
+import { useLanguage } from "../components/LanguageContext";
+
 function Home() {
+  const { language } = useLanguage();
+
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
@@ -21,17 +26,30 @@ function Home() {
             animate="show"
             exit="hidden"
           >
-            {/* title */}
-            <h1 className="h1">
-              Transforming Ideas <br /> Into{" "}
-              <span className="text-accent">Digital Reality</span>
-            </h1>
-            {/* subtitle */}
-            <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-              eos nemo facere reprehenderit. Ratione, autem eveniet veritatis
-              eum sit temporibus.
-            </p>
+            {language === 'eng' ? (
+              <>
+                <h1 className="h1">
+                  Crafting Cinematic Moments <br /> Capture{" "}
+                  <span className="text-accent">Your Unforgettable Memories!</span>
+                </h1>
+                <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+                  eos nemo facere reprehenderit. Ratione, autem eveniet veritatis
+                  eum sit temporibus.
+                </p>
+              </>
+            ) : (
+              <><h1 className="h1">
+                Iskusni Video Magičari <br /> Zabeležite {" "}
+                <span className="text-accent">Vaše Nezaboravne Trenutke!</span>
+              </h1>
+                <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+                  eos nemo facere reprehenderit. Ratione, autem eveniet veritatis
+                  eum sit temporibus.
+                </p></>
+            )}
+
           </motion.div>
           {/* button */}
           <div className="flex justify-center xl:hidden relative">
