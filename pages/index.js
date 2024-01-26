@@ -32,7 +32,7 @@ function Home() {
                   Enshrine Your <br />
                   <span className="text-accent">Memorable Moments!</span>
                 </h1>
-                <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[27px]">
+                <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[50px]">
                   We shoot with high-quality cameras, and for enthusiasts we also shoot with a drone from the air. Whether you want to capture a wedding, your child&apos;s sporting event, an aerial shot of a house for sale or a farm for promotion, we&apos;ve got you covered.
                 </p>
               </>
@@ -41,7 +41,7 @@ function Home() {
                 Zabeležite Vaše<br />
                 <span className="text-accent">Najbitnije Trenutke!</span>
               </h1>
-                <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[27px]">
+                <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[50px]">
                   Snimamo kamerama visokih kvaliteta, a za entuzijaste takođe snimamo i dronom iz vazduha. Da li želite da zabeležite venčanje, sportski događaj vašeg deteta, snimiti kuću iz vazduha radi prodaje ili poljoprivredno gazdinstvo zbog promocije, tu smo za vas.
                 </p></>
             )}

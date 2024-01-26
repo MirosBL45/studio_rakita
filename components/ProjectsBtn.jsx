@@ -1,28 +1,20 @@
-// next image
-import Image from "next/image";
-
 // next link
-import Link from "next/link";
-
-// icons
-import { HiArrowRight } from "react-icons/hi2";
+import Link from 'next/link';
 
 function ProjectsBtn() {
   return (
     <div className="mx-auto xl:mx-0 z-30">
-      <Link
-        href={"/work"}
-        className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
-      >
-        <Image
-          src={"/rounded-text.png"}
-          width={141}
-          height={148}
-          alt="my_projects"
-          className="animate-spin-slow w-full h-full max-w-[141px] max-h-[148px]"
-        />
-        <HiArrowRight className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300" />
-      </Link>
+      <div class="relative inline-flex  group">
+        <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#F13024] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+        <Link
+          href="/work"
+          title="Our projects"
+          class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+          role="button"
+        >
+          See Our projects
+        </Link>
+      </div>
     </div>
   );
 }
