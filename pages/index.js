@@ -41,15 +41,12 @@ function Home() {
             </p>
           </motion.div>
           {/* button */}
-          <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
-          </div>
           <motion.div
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="flex"
           >
             <ProjectsBtn textOfButton={language === 'eng' ? landingData.button : landingDataSR.button} />
           </motion.div>
