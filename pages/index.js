@@ -3,6 +3,9 @@ import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 
+// data
+import { landingData, landingDataSR } from '../data/landingData';
+
 // framer-motion
 import { motion } from "framer-motion";
 
@@ -26,26 +29,16 @@ function Home() {
             animate="show"
             exit="hidden"
           >
-            {language === 'eng' ? (
-              <>
-                <h1 className="h1">
-                  Enshrine Your <br />
-                  <span className="text-accent">Memorable Moments!</span>
-                </h1>
-                <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[50px]">
-                  We shoot with high-quality cameras, and for enthusiasts we also shoot with a drone from the air. Whether you want to capture a wedding, your child&apos;s sporting event, an aerial shot of a house for sale or a farm for promotion, we&apos;ve got you covered.
-                </p>
-              </>
-            ) : (
-              <><h1 className="h1">
-                Zabeležite Vaše<br />
-                <span className="text-accent">Najbitnije Trenutke!</span>
-              </h1>
-                <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[50px]">
-                  Snimamo kamerama visokih kvaliteta, a za entuzijaste takođe snimamo i dronom iz vazduha. Da li želite da zabeležite venčanje, sportski događaj vašeg deteta, snimiti kuću iz vazduha radi prodaje ili poljoprivredno gazdinstvo zbog promocije, tu smo za vas.
-                </p></>
-            )}
-
+            {language === 'eng' ? (<h1 className="h1">
+              {landingData.title1} <br />
+              <span className="text-accent">{landingData.title2}</span>
+            </h1>) : (<h1 className="h1">
+              {landingDataSR.title1} <br />
+              <span className="text-accent">{landingDataSR.title2}</span>
+            </h1>)}
+            <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[50px]">
+              {language === 'eng' ? landingData.description : landingDataSR.description}
+            </p>
           </motion.div>
           {/* button */}
           <div className="flex justify-center xl:hidden relative">
@@ -58,7 +51,7 @@ function Home() {
             exit="hidden"
             className="hidden xl:flex"
           >
-            <ProjectsBtn />
+            <ProjectsBtn textOfButton={language === 'eng' ? landingData.button : landingDataSR.button} />
           </motion.div>
         </div>
       </div>
