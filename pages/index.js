@@ -33,7 +33,7 @@ function Home() {
                   <span className="text-accent">Memorable Moments!</span>
                 </h1>
                 <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[27px]">
-                  We shoot with high-quality cameras, and for enthusiasts we also shoot with a drone from the air. Whether you want to capture a wedding, your child's sporting event, an aerial shot of a house for sale or a farm for promotion, we've got you covered.
+                  We shoot with high-quality cameras, and for enthusiasts we also shoot with a drone from the air. Whether you want to capture a wedding, your child&apos;s sporting event, an aerial shot of a house for sale or a farm for promotion, we&apos;ve got you covered.
                 </p>
               </>
             ) : (
