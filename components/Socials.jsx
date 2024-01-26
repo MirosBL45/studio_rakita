@@ -1,17 +1,10 @@
 // links
-import Link from "next/link";
+import Link from 'next/link';
 
 // icons
-import {
-  RiYoutubeLine,
-  RiInstagramLine,
-  RiFacebookLine,
-  RiDribbbleLine,
-  RiBehanceLine,
-  RiPinterestLine,
-} from "react-icons/ri";
+import { RiYoutubeLine, RiInstagramLine, RiFacebookLine } from 'react-icons/ri';
 
-import { SlGlobe } from "react-icons/sl";
+import { SlGlobe } from 'react-icons/sl';
 
 function Socials({ language, setLanguage }) {
   return (
@@ -19,52 +12,34 @@ function Socials({ language, setLanguage }) {
       <div className="flex items-center gap-x-14">
         <div className="flex items-center gap-x-5 text-lg lg:text-2xl xl:text-3xl">
           <Link
-            href={""}
+            href={''}
             className="hover:text-accent transition-all duration-300"
           >
             <RiYoutubeLine />
           </Link>
           <Link
-            href={""}
+            href={''}
             className="hover:text-accent transition-all duration-300"
           >
             <RiInstagramLine />
           </Link>
           <Link
-            href={""}
+            href={''}
             className="hover:text-accent transition-all duration-300"
           >
             <RiFacebookLine />
           </Link>
-          <Link
-            href={""}
-            className="hover:text-accent transition-all duration-300"
-          >
-            <RiDribbbleLine />
-          </Link>
-          <Link
-            href={""}
-            className="hover:text-accent transition-all duration-300"
-          >
-            <RiBehanceLine />
-          </Link>
-          <Link
-            href={""}
-            className="hover:text-accent transition-all duration-300"
-          >
-            <RiPinterestLine />
-          </Link>
         </div>
         <div
           onClick={() => {
-            if (language === "srb") {
-              setLanguage("eng");
+            if (language === 'srb') {
+              setLanguage('eng');
             } else {
-              setLanguage("srb");
+              setLanguage('srb');
             }
           }}
           title={
-            language === "srb" ? "Translate into English" : "Prevedi na srpski"
+            language === 'srb' ? 'Translate into English' : 'Prevedi na srpski'
           }
           className="text-lg lg:text-2xl cursor-pointer z-50 hover:text-accent transition-all duration-300"
         >
