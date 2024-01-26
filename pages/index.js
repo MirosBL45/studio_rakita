@@ -29,24 +29,20 @@ function Home() {
             {language === 'eng' ? (
               <>
                 <h1 className="h1">
-                  Crafting Cinematic Moments <br /> Capture{" "}
-                  <span className="text-accent">Your Unforgettable Memories!</span>
+                  Enshrine Your <br />
+                  <span className="text-accent">Memorable Moments!</span>
                 </h1>
-                <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-                  eos nemo facere reprehenderit. Ratione, autem eveniet veritatis
-                  eum sit temporibus.
+                <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[27px]">
+                  We shoot with high-quality cameras, and for enthusiasts we also shoot with a drone from the air. Whether you want to capture a wedding, your child's sporting event, an aerial shot of a house for sale or a farm for promotion, we've got you covered.
                 </p>
               </>
             ) : (
               <><h1 className="h1">
-                Iskusni Video Magičari <br /> Zabeležite {" "}
-                <span className="text-accent">Vaše Nezaboravne Trenutke!</span>
+                Zabeležite Vaše<br />
+                <span className="text-accent">Najbitnije Trenutke!</span>
               </h1>
-                <p className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
-                  eos nemo facere reprehenderit. Ratione, autem eveniet veritatis
-                  eum sit temporibus.
+                <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[27px]">
+                  Snimamo kamerama visokih kvaliteta, a za entuzijaste takođe snimamo i dronom iz vazduha. Da li želite da zabeležite venčanje, sportski događaj vašeg deteta, snimiti kuću iz vazduha radi prodaje ili poljoprivredno gazdinstvo zbog promocije, tu smo za vas.
                 </p></>
             )}
 

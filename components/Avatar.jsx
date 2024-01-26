@@ -1,11 +1,11 @@
 // next image
-import Image from "next/image";
+import Image from 'next/image';
 
 function Avatar() {
   return (
     <div className="hidden xl:flex xl:max-w-none">
       <Image
-        src={"/avatar.png"}
+        src={'/drone.svg'}
         width={737}
         height={678}
         alt="avatar"
