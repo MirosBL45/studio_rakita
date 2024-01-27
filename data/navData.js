@@ -25,3 +25,20 @@ export const navData = [
     icon: <HiEnvelope />,
   },
 ];
+
+export const navDataSR = [
+  { name: "početna", path: "/", icon: <HiHome /> },
+  { name: "o nama", path: "/about", icon: <HiUser /> },
+  { name: "naše usluge", path: "/services", icon: <HiRectangleGroup /> },
+  { name: "naši radovi", path: "/work", icon: <HiViewColumns /> },
+  {
+    name: "preporuke",
+    path: "/testimonials",
+    icon: <HiChatBubbleBottomCenterText />,
+  },
+  {
+    name: "kontakt",
+    path: "/contact",
+    icon: <HiEnvelope />,
+  },
+];
