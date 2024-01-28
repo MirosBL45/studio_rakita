@@ -12,20 +12,41 @@ function Socials({ language, setLanguage }) {
       <div className="flex items-center gap-x-14">
         <div className="flex items-center gap-x-5 text-lg lg:text-2xl xl:text-3xl">
           <Link
-            href={''}
+            href={'https://www.youtube.com/@studiorakita3385/videos'}
             className="hover:text-accent transition-all duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
+            title={
+              language === 'eng'
+                ? 'Visit Our YouTube channel'
+                : 'Pogledajte Naš YouTube kanal'
+            }
           >
             <RiYoutubeLine />
           </Link>
           <Link
-            href={''}
+            href={'https://www.instagram.com/highlights.studio.rakita/'}
             className="hover:text-accent transition-all duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
+            title={
+              language === 'eng'
+                ? 'Visit Us on Instagram'
+                : 'Pogledajte Nas na Instagramu'
+            }
           >
             <RiInstagramLine />
           </Link>
           <Link
-            href={''}
+            href={'https://www.facebook.com/highlights.studio.rakita/'}
             className="hover:text-accent transition-all duration-300"
+            rel="noopener noreferrer"
+            target="_blank"
+            title={
+              language === 'eng'
+                ? 'Visit Our Facebook account'
+                : 'Pogledajte Naš Facebook nalog'
+            }
           >
             <RiFacebookLine />
           </Link>
