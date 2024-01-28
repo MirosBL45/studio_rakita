@@ -91,3 +91,46 @@ export const aboutData = [
     ],
   },
 ];
+
+export const aboutDataText =
+{
+  title1: 'Studio Rakita.',
+  title2: 'Each visual tells story.',
+  description: 'Our organization`s journey has been shaped over numerous years of project involvement filled with satisfaction. It`s a pleasure for you, as you get precisely what you desire, and for us, it`s a joy to engage in what we love. This inspiration led to the formation of a team of individuals enthusiastic about actively participating in capturing the most enthralling videos from your event.',
+  years: {
+    text: 'Years of expirience'
+  },
+  clients: {
+    text: 'Satisfied clients'
+  },
+  projects: {
+    text: 'Finished projects'
+  },
+  awards: {
+    text: 'Winning awards'
+  },
+};
+
+export const aboutDataTextSR =
+{
+  title1: 'Studio Rakita.',
+  title2: 'Svaki kadar ima priču.',
+  description: 'Razvijali smo se kroz mnogo godina rada na različitim projektima, uživajući u svakom trenutku. Vi uživate jer dobijate prelepe kadrove omiljenih trenutaka, a za nas je radost baviti se onim što volimo. Ova inspiracija dovela je do formiranja tima pojedinaca koji su entuzijastični za aktivno učešće u snimanju najzanimljivijih video zapisa sa vašeg događaja.',
+  years: {
+    text: 'Godina iskustva'
+  },
+  clients: {
+    text: 'Zadovoljnih klijenata'
+  },
+  projects: {
+    text: 'Završenih projekata'
+  },
+  awards: {
+    text: 'Dobijenih nagrada'
+  },
+};
+
+export const years = 10;
+export const clients = 250;
+export const projects = 650;
+export const awards = 8;

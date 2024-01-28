@@ -1,4 +1,12 @@
-import { aboutData } from '../../data/aboutData';
+import {
+  aboutData,
+  aboutDataText,
+  aboutDataTextSR,
+  years,
+  clients,
+  projects,
+  awards,
+} from '../../data/aboutData';
 import { useState } from 'react';
 
 // components
@@ -20,7 +28,7 @@ function About() {
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
       {/* avatar img */}
       <motion.div
@@ -44,13 +52,13 @@ function About() {
           >
             {language === 'eng' ? (
               <div>
-                Captivating <span className="text-accent">stories</span> birth
-                magnificent designs.
+                {aboutDataText.title1}{' '}
+                <span className="text-accent">{aboutDataText.title2}</span>
               </div>
             ) : (
               <div>
-                Pravljenje <span className="text-accent">sjajnih</span> prica o
-                snimanju.
+                {aboutDataTextSR.title1}{' '}
+                <span className="text-accent">{aboutDataTextSR.title2}</span>
               </div>
             )}
           </motion.h2>
@@ -61,9 +69,9 @@ function About() {
             exit="hidden"
             className="text-[14px] md:text-xl max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began filming. Since then, I have done remote work
-            for agencies, consulted for startups, and collaborated on digital
-            products for business and consumer use.
+            {language === 'eng'
+              ? aboutDataText.description
+              : aboutDataTextSR.description}
           </motion.p>
           {/* counters */}
           <motion.div
@@ -77,37 +85,45 @@ function About() {
               {/* expirience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={years} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of expirience
+                  {language === 'eng'
+                    ? aboutDataText.years.text
+                    : aboutDataTextSR.years.text}
                 </div>
               </div>
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={clients} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
+                  {language === 'eng'
+                    ? aboutDataText.clients.text
+                    : aboutDataTextSR.clients.text}
                 </div>
               </div>
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={projects} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects
+                  {language === 'eng'
+                    ? aboutDataText.projects.text
+                    : aboutDataTextSR.projects.text}
                 </div>
               </div>
               {/* awards */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} /> +
+                  <CountUp start={0} end={awards} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards
+                  {language === 'eng'
+                    ? aboutDataText.awards.text
+                    : aboutDataTextSR.awards.text}
                 </div>
               </div>
             </div>
