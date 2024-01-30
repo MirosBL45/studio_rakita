@@ -44,7 +44,7 @@ export const aboutData = [
     ],
   },
   {
-    title: "awards",
+    title: "acknowledgments",
     info: [
       {
         title: "Webby Awards - Honoree",
@@ -119,7 +119,7 @@ export const aboutDataSR = [
     ],
   },
   {
-    title: "nagrade",
+    title: "priznanja",
     info: [
       {
         title: "srWebby Awards - Honoree",
