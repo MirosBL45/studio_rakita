@@ -48,11 +48,11 @@ export const aboutData = [
     info: [
       {
         title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        stage: "2011 - 2013",
       },
       {
         title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        stage: "2009 - 2012",
       },
     ],
   },
@@ -65,11 +65,11 @@ export const aboutData = [
       },
       {
         title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        stage: "2010 - 2014",
       },
       {
         title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        stage: "2008 - 2013",
       },
     ],
   },
