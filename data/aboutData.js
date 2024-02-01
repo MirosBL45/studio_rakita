@@ -44,7 +44,7 @@ export const aboutData = [
     ],
   },
   {
-    title: "acknowledgments",
+    title: "gratitude",
     info: [
       {
         title: "Webby Awards - Honoree",
@@ -181,8 +181,8 @@ export const aboutDataText =
   projects: {
     text: 'Finished projects'
   },
-  awards: {
-    text: 'Winning awards'
+  gratitude: {
+    text: 'Winning gratitudes'
   },
 };
 
@@ -200,12 +200,12 @@ export const aboutDataTextSR =
   projects: {
     text: 'Završenih projekata'
   },
-  awards: {
+  gratitude: {
     text: 'Dobijenih nagrada'
   },
 };
 
-export const years = 10;
+export const years = 20;
 export const clients = 250;
 export const projects = 650;
-export const awards = 8;
+export const gratitude = 35;

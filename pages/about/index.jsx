@@ -6,7 +6,7 @@ import {
   years,
   clients,
   projects,
-  awards,
+  gratitude,
 } from '../../data/aboutData';
 import { useState } from 'react';
 
@@ -116,15 +116,15 @@ function About() {
                     : aboutDataTextSR.projects.text}
                 </div>
               </div>
-              {/* awards */}
+              {/* gratitude */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={awards} duration={5} /> +
+                  <CountUp start={0} end={gratitude} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   {language === 'eng'
-                    ? aboutDataText.awards.text
-                    : aboutDataTextSR.awards.text}
+                    ? aboutDataText.gratitude.text
+                    : aboutDataTextSR.gratitude.text}
                 </div>
               </div>
             </div>
