@@ -1,12 +1,14 @@
 // icons
 import {
-  FaHtml5,
-  FaCss3,
   FaJs,
   FaReact,
   FaWordpress,
   FaFigma,
 } from "react-icons/fa";
+
+import { CgCamera } from "react-icons/cg";
+import { TbDrone } from "react-icons/tb";
+import { GiDeliveryDrone } from "react-icons/gi";
 
 import {
   SiNextdotjs,
@@ -22,10 +24,10 @@ export const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Video Recording",
         icons: [
-          <FaHtml5 key="html" />,
-          <FaCss3 key="css" />,
+          <CgCamera key="camera" />,
+          <GiDeliveryDrone key="drone" />,
           <FaJs key="js" />,
           <FaReact key="react" />,
           <SiNextdotjs key="nextjs" />,
@@ -97,10 +99,10 @@ export const aboutDataSR = [
     title: "veštine",
     info: [
       {
-        title: "srWeb Development",
+        title: "Video Snimanje",
         icons: [
-          <FaHtml5 key="html" />,
-          <FaCss3 key="css" />,
+          <CgCamera key="camera" />,
+          <GiDeliveryDrone key="drone" />,
           <FaJs key="js" />,
           <FaReact key="react" />,
           <SiNextdotjs key="nextjs" />,
