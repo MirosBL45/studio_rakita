@@ -1,22 +1,8 @@
 // icons
-import {
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-
 import { CgCamera } from "react-icons/cg";
-import { TbDrone } from "react-icons/tb";
 import { GiDeliveryDrone } from "react-icons/gi";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
-
+import { SiAdobepremierepro } from "react-icons/si";
+import vegasIcon from '../public/vegas.svg'
 
 //  data
 export const aboutData = [
@@ -26,21 +12,27 @@ export const aboutData = [
       {
         title: "Video Recording",
         icons: [
-          <CgCamera key="camera" />,
-          <GiDeliveryDrone key="drone" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          {
+            iconThis: <CgCamera key="camera" />,
+            title: "Camera"
+          },
+          {
+            iconThis: <GiDeliveryDrone key="drone" />,
+            title: "Drone"
+          },
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Video editing",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="adobexd" />,
-          <SiAdobephotoshop key="photoshop" />,
+          {
+            iconThis: vegasIcon.src,
+            title: "Vegas Pro"
+          },
+          {
+            iconThis: <SiAdobepremierepro key="premierepro" />,
+            title: "Adobe Premiere Pro"
+          },
         ],
       },
     ],
@@ -101,21 +93,27 @@ export const aboutDataSR = [
       {
         title: "Video Snimanje",
         icons: [
-          <CgCamera key="camera" />,
-          <GiDeliveryDrone key="drone" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          {
+            iconThis: <CgCamera key="camera" />,
+            title: "Kamerom"
+          },
+          {
+            iconThis: <GiDeliveryDrone key="drone" />,
+            title: "Dronom"
+          },
         ],
       },
       {
-        title: "srUI/UX Design",
+        title: "Video montaža",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="adobexd" />,
-          <SiAdobephotoshop key="photoshop" />,
+          {
+            iconThis: vegasIcon.src,
+            title: "Vegas Pro"
+          },
+          {
+            iconThis: <SiAdobepremierepro key="premierepro" />,
+            title: "Adobe Premiere Pro"
+          },
         ],
       },
     ],

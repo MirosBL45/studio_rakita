@@ -1,3 +1,4 @@
+// data
 import {
   aboutData,
   aboutDataSR,
@@ -8,6 +9,9 @@ import {
   projects,
   gratitude,
 } from '../../data/aboutData';
+
+// next image
+import Image from 'next/image';
 import { useState } from 'react';
 
 // components
@@ -186,8 +190,23 @@ function About() {
                     <div className="flex gap-x-4">
                       {/* icons */}
                       {item.icons?.map((icon, iconIndex) => (
-                        <div key={iconIndex} className="text-2xl text-white">
-                          {icon}
+                        <div
+                          key={iconIndex}
+                          className="text-3xl text-white flex gap-x-[10px]"
+                        >
+                          {typeof icon.iconThis === 'string' ? (
+                            <Image
+                              src={icon.iconThis}
+                              width={30}
+                              height={30}
+                              alt={icon.title}
+                            />
+                          ) : (
+                            icon.iconThis
+                          )}
+                          <span className="text-base text-white">
+                            {icon.title}
+                          </span>
                         </div>
                       ))}
                     </div>
@@ -203,11 +222,26 @@ function About() {
                     <div className="hidden md:flex">:</div>
                     {/* years */}
                     {item.stage && <div>{item.stage}</div>}
-                    <div className="flex gap-x-4">
+                    <div className="flex gap-x-[30px]">
                       {/* icons */}
                       {item.icons?.map((icon, iconIndex) => (
-                        <div key={iconIndex} className="text-2xl text-white">
-                          {icon}
+                        <div
+                          key={iconIndex}
+                          className="text-3xl text-white flex gap-x-[10px]"
+                        >
+                          {typeof icon.iconThis === 'string' ? (
+                            <Image
+                              src={icon.iconThis}
+                              width={30}
+                              height={30}
+                              alt={icon.title}
+                            />
+                          ) : (
+                            icon.iconThis
+                          )}
+                          <span className="text-base text-white">
+                            {icon.title}
+                          </span>
                         </div>
                       ))}
                     </div>
