@@ -8,6 +8,16 @@ import {
 } from "react-icons/rx";
 
 // data
+export const serviceDataMain = {
+  title: 'Our Services',
+  text: 'Our team offers filming with professional cameras and aerial drone. After the recording, video editing follows. Also, by agreement, we do Live Stream events on our YouTube channel.'
+}
+
+export const serviceDataMainSR = {
+  title: 'Naše usluge',
+  text: 'Naš tim nudi snimanje profesionalnim kamerama i dronom iz vazduha. Nakon snimanja sledi i video montaža. Takođe, po dogovoru, radimo i Live Stream događaja na našem YouTube kanalu.',
+}
+
 export const serviceData = [
   {
     icon: <RxCrop />,

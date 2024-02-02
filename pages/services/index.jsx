@@ -9,7 +9,15 @@ import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../../variants';
 
+// data
+import { serviceDataMain, serviceDataMainSR } from '../../data/serviceData';
+
+// LanguageContext
+import { useLanguage } from '../../components/LanguageContext';
+
 function Services() {
+  const { language } = useLanguage();
+
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />
@@ -24,7 +32,10 @@ function Services() {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              My services <span className="text-accent">.</span>
+              {language === 'eng'
+                ? serviceDataMain.title
+                : serviceDataMainSR.title}
+              <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)}
@@ -33,9 +44,9 @@ function Services() {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-              dolor eum veritatis illum, placeat qui aliquam quae ullam dolore
-              laboriosam.
+              {language === 'eng'
+                ? serviceDataMain.text
+                : serviceDataMainSR.text}
             </motion.p>
           </div>
           {/* slider */}
