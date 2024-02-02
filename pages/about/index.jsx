@@ -182,9 +182,10 @@ function About() {
                     key={itemIndex}
                     className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                   >
-                    {/* title */}
-                    <div className="font-light md:mb-0">{item.title}</div>
-                    <div className="hidden md:flex">:</div>
+                    {/* title xl:mr-[55px] */}
+                    <div className="font-light xl:max-w-[440px] md:mb-0">
+                      {item.title}
+                    </div>
                     {/* years */}
                     {item.stage && <div>{item.stage}</div>}
                     <div className="flex gap-x-4">
@@ -192,19 +193,10 @@ function About() {
                       {item.icons?.map((icon, iconIndex) => (
                         <div
                           key={iconIndex}
-                          className="text-3xl text-white flex gap-x-[10px]"
+                          className="text-3xl text-white flex items-center gap-x-[10px]"
                         >
-                          {typeof icon.iconThis === 'string' ? (
-                            <Image
-                              src={icon.iconThis}
-                              width={30}
-                              height={30}
-                              alt={icon.title}
-                            />
-                          ) : (
-                            icon.iconThis
-                          )}
-                          <span className="text-base text-white">
+                          {icon.iconThis}
+                          <span className="text-sm text-white">
                             {icon.title}
                           </span>
                         </div>
@@ -217,9 +209,10 @@ function About() {
                     key={itemIndex}
                     className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                   >
-                    {/* title */}
-                    <div className="font-light md:mb-0">{item.title}</div>
-                    <div className="hidden md:flex">:</div>
+                    {/* title xl:mr-[55px] */}
+                    <div className="font-light xl:max-w-[440px] md:mb-0">
+                      {item.title}
+                    </div>
                     {/* years */}
                     {item.stage && <div>{item.stage}</div>}
                     <div className="flex gap-x-[30px]">
@@ -227,19 +220,10 @@ function About() {
                       {item.icons?.map((icon, iconIndex) => (
                         <div
                           key={iconIndex}
-                          className="text-3xl text-white flex gap-x-[10px]"
+                          className="text-3xl text-white flex items-center gap-x-[10px]"
                         >
-                          {typeof icon.iconThis === 'string' ? (
-                            <Image
-                              src={icon.iconThis}
-                              width={30}
-                              height={30}
-                              alt={icon.title}
-                            />
-                          ) : (
-                            icon.iconThis
-                          )}
-                          <span className="text-base text-white">
+                          {icon.iconThis}
+                          <span className="text-sm text-white">
                             {icon.title}
                           </span>
                         </div>

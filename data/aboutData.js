@@ -2,7 +2,7 @@
 import { CgCamera } from "react-icons/cg";
 import { GiDeliveryDrone } from "react-icons/gi";
 import { SiAdobepremierepro } from "react-icons/si";
-import vegasIcon from '../public/vegas.svg'
+import { TbSquareLetterV } from "react-icons/tb";
 
 //  data
 export const aboutData = [
@@ -10,7 +10,7 @@ export const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Video Recording",
+        title: "Video Recording:",
         icons: [
           {
             iconThis: <CgCamera key="camera" />,
@@ -23,10 +23,10 @@ export const aboutData = [
         ],
       },
       {
-        title: "Video editing",
+        title: "Video editing:",
         icons: [
           {
-            iconThis: vegasIcon.src,
+            iconThis: <TbSquareLetterV key="vegas" />,
             title: "Vegas Pro"
           },
           {
@@ -41,12 +41,7 @@ export const aboutData = [
     title: "gratitude",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2013",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2012",
+        title: "Many years of work have brought us a large number of recognitions, starting from sports clubs, all the way to newlyweds satisfied with their wonderful wedding shots.",
       },
     ],
   },
@@ -54,33 +49,15 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2014",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2013",
+        title: "We are proud of our many years of experience in filming and editing events - from weddings to sports matches. With each new assignment, we bring a fresh approach and creativity to create videos that leave a lasting impression.",
       },
     ],
   },
   {
-    title: "credentials",
+    title: "Why Us?",
     info: [
       {
-        title: "Web Development - ABC University, LA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science - Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Graphic Designer - ABC Institute, LA",
-        stage: "2006",
+        title: "Quality is recognized at first sight as our commitment to delivering top quality in every frame ensures that every moment becomes unforgettable.",
       },
     ],
   },
@@ -91,7 +68,7 @@ export const aboutDataSR = [
     title: "veštine",
     info: [
       {
-        title: "Video Snimanje",
+        title: "Video Snimanje:",
         icons: [
           {
             iconThis: <CgCamera key="camera" />,
@@ -104,10 +81,10 @@ export const aboutDataSR = [
         ],
       },
       {
-        title: "Video montaža",
+        title: "Video montaža:",
         icons: [
           {
-            iconThis: vegasIcon.src,
+            iconThis: <TbSquareLetterV key="vegas" />,
             title: "Vegas Pro"
           },
           {
@@ -122,12 +99,7 @@ export const aboutDataSR = [
     title: "priznanja",
     info: [
       {
-        title: "srWebby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "srAdobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Dugi niz godina rada doneo nam je veliki broj priznanja počevši od sportskih klubova, pa sve do mladenaca zadovoljnih svojim divnim svadbenim snimcima.",
       },
     ],
   },
@@ -135,33 +107,15 @@ export const aboutDataSR = [
     title: "iskustvo",
     info: [
       {
-        title: "srUX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "srWeb Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "srIntern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Ponosimo se dugogodišnjim iskustvom u snimanju i editovanju događaja - od svadbi do sportskih mečeva. Sa svakim novim zadatkom, donosimo svež pristup i kreativnost kako bismo stvorili video zapise koji ostavljaju trajan utisak.",
       },
     ],
   },
   {
-    title: "kredencijali",
+    title: "Zašto Mi?",
     info: [
       {
-        title: "srWeb Development - ABC University, LA",
-        stage: "2011",
-      },
-      {
-        title: "srComputer Science - Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "srGraphic Designer - ABC Institute, LA",
-        stage: "2006",
+        title: "Kvalitet se prepoznaje na prvi pogled jer naša posvećenost pružanju vrhunskog kvaliteta u svakom kadru osigurava da svaki trenutak postane nezaboravan.",
       },
     ],
   },
