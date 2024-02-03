@@ -1,15 +1,9 @@
 // icons
-import {
-  RxDesktop,
-  RxReader,
-  RxRocket,
-} from "react-icons/rx";
-
-// icons
 import { CgCamera } from "react-icons/cg";
 import { GiDeliveryDrone } from "react-icons/gi";
-import { SiAdobepremierepro } from "react-icons/si";
-import { TbSquareLetterV } from "react-icons/tb";
+import { BsGearWideConnected } from "react-icons/bs";
+import { MdLiveTv } from "react-icons/md";
+import { MdOutlinePeople } from "react-icons/md";
 
 // data
 export const serviceDataMain = {
@@ -34,19 +28,19 @@ export const serviceData = [
     description: 'Drones provide beautiful panoramas, dynamic aerial shots and fluid movements, adding spectacular visual impact and a unique dimension to your footage.',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <BsGearWideConnected />,
+    title: 'Video editing',
+    description: 'Our expertise in video editing optimizes the flow and rhythm of your video, and highlights key moments, creating an emotionally connected whole, making them look professional.',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <MdLiveTv />,
+    title: 'Live Stream',
+    description: 'Someone prevented from coming? Make every moment of your event available anywhere, anytime, because your story deserves to be seen in real time.',
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <MdOutlinePeople />,
+    title: 'Consultations',
+    description: 'Our team is here to listen, understand and provide personalized advice, because together we can better shape your ideas and define clear steps towards achieving your goals.',
   },
 ];
 
@@ -62,18 +56,18 @@ export const serviceDataSR = [
     description: 'Dronovi pružaju prelepe panorame, dinamične kadrove iz vazduha i fluidne pokrete, dodajući spektakularan vizuelni efekat i jedinstvenu dimenziju  vašim snimcima.',
   },
   {
-    icon: <RxDesktop />,
-    title: 'srDevelopment',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <BsGearWideConnected />,
+    title: 'Video montaža',
+    description: 'Naša veština u video montaži optimizuje tok i ritam vašeg videa, a ističe ključne trenutke, stvarajući emotivno povezanu celinu, čineći ih profesionalnim.',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <MdLiveTv />,
+    title: 'Live Stream',
+    description: 'Neko je sprečen da dođe? Učinite svaki trenutak vašeg događaja dostupnim svuda i u svakom trenutku, jer vaša priča zaslužuje da bude viđena u realnom vremenu.',
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <MdOutlinePeople />,
+    title: 'Konsultacije',
+    description: 'Naš tim je ovde da sasluša, razume i pruži personalizovane savete, jer zajedno možemo bolje da oblikujemo vaše zamisli i definišemo jasne korake ka ostvarenju vaših ciljeva.',
   },
 ];
