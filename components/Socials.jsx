@@ -4,7 +4,7 @@ import Link from 'next/link';
 // icons
 import { RiYoutubeLine, RiInstagramLine, RiFacebookLine } from 'react-icons/ri';
 
-import { SlGlobe } from 'react-icons/sl';
+import { BsGlobeAmericas } from 'react-icons/bs';
 
 function Socials({ language, setLanguage }) {
   return (
@@ -62,9 +62,9 @@ function Socials({ language, setLanguage }) {
           title={
             language === 'srb' ? 'Translate into English' : 'Prevedi na srpski'
           }
-          className="text-lg lg:text-2xl cursor-pointer z-50 hover:text-accent transition-all duration-300"
+          className="text-lg lg:text-2xl cursor-pointer z-50 text-accent2 hover:text-accent transition-all duration-300"
         >
-          <SlGlobe />
+          <BsGlobeAmericas />
         </div>
       </div>
     </>
