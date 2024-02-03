@@ -1,8 +1,6 @@
 // icons
 import {
-  RxCrop,
   RxDesktop,
-  RxPencil2,
   RxReader,
   RxRocket,
 } from "react-icons/rx";
@@ -26,33 +24,56 @@ export const serviceDataMainSR = {
 
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    bigText: 'This is big text1',
+    icon: <CgCamera />,
+    title: 'Camera',
+    description: 'A professional camera surpasses the capabilities of ordinary devices, because they have advanced functions that raise the level of professionalism of your content.',
   },
   {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    bigText: 'This is big text2',
+    icon: <GiDeliveryDrone />,
+    title: 'Making a Drone Shot',
+    description: 'Drones provide beautiful panoramas, dynamic aerial shots and fluid movements, adding spectacular visual impact and a unique dimension to your footage.',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    bigText: 'This is big text3',
   },
   {
     icon: <RxReader />,
     title: 'Copywriting',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    bigText: 'This is big text4',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    bigText: 'This is big text5',
+  },
+];
+
+export const serviceDataSR = [
+  {
+    icon: <CgCamera />,
+    title: 'Kamera',
+    description: 'Profesionalna kamera nadmašuje mogućnosti običnih uređaja, jer poseduju napredne funkcije čime se podiže nivo profesionalizma vašeg sadržaja.',
+  },
+  {
+    icon: <GiDeliveryDrone />,
+    title: 'Snimanje Dronom',
+    description: 'Dronovi pružaju prelepe panorame, dinamične kadrove iz vazduha i fluidne pokrete, dodajući spektakularan vizuelni efekat i jedinstvenu dimenziju  vašim snimcima.',
+  },
+  {
+    icon: <RxDesktop />,
+    title: 'srDevelopment',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    icon: <RxReader />,
+    title: 'Copywriting',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    icon: <RxRocket />,
+    title: 'SEO',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
 ];
