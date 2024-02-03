@@ -7,6 +7,12 @@ import {
   RxRocket,
 } from "react-icons/rx";
 
+// icons
+import { CgCamera } from "react-icons/cg";
+import { GiDeliveryDrone } from "react-icons/gi";
+import { SiAdobepremierepro } from "react-icons/si";
+import { TbSquareLetterV } from "react-icons/tb";
+
 // data
 export const serviceDataMain = {
   title: 'Our Services',
@@ -23,25 +29,30 @@ export const serviceData = [
     icon: <RxCrop />,
     title: 'Branding',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    bigText: 'This is big text1',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    bigText: 'This is big text2',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    bigText: 'This is big text3',
   },
   {
     icon: <RxReader />,
     title: 'Copywriting',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    bigText: 'This is big text4',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    bigText: 'This is big text5',
   },
 ];

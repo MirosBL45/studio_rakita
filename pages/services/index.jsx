@@ -57,7 +57,7 @@ function Services() {
             exit="hidden"
             className="w-full xl:max-w-[65%]"
           >
-            <ServiceSlider />
+            <ServiceSlider language={language} />
           </motion.div>
         </div>
       </div>

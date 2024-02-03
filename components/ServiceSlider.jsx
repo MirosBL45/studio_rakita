@@ -5,6 +5,7 @@ import { RxArrowTopRight } from 'react-icons/rx';
 
 // swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useState } from 'react';
 
 // swiper styles
 import 'swiper/css';
@@ -14,7 +15,7 @@ import 'swiper/css/pagination';
 // required modules
 import { FreeMode, Pagination } from 'swiper';
 
-function ServiceSlider() {
+function ServiceSlider({ language }) {
   return (
     <Swiper
       breakpoints={{
@@ -45,8 +46,11 @@ function ServiceSlider() {
               <p className="max-w-[350px] leading-normal">{item.description}</p>
             </div>
             {/* arrow */}
-            <div className="text-3xl">
+            <div className="text-3xl flex gap-x-2 items-center">
               <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
+              <span className="text-sm group-hover:text-accent transition-all duration-300">
+                see more
+              </span>
             </div>
           </div>
         </SwiperSlide>
