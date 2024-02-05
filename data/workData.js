@@ -4,32 +4,38 @@ export const workData = {
         {
             images: [
                 {
-                    title: 'title1',
-                    path: '/thumb1.jpg',
+                    title: 'Aleksandar Dimić',
+                    path: '/dimale.jpg',
+                    link: 'https://www.youtube.com/watch?v=MMkDjw_c2XA',
                 },
                 {
-                    title: 'title2',
-                    path: '/miodab.jpg',
+                    title: 'Zemunski kamerni orkestar',
+                    path: '/kamork.jpg',
+                    link: 'https://www.youtube.com/watch?v=oPS11rDEqYI',
                 },
                 {
-                    title: 'title3',
-                    path: '/thumb3.jpg',
+                    title: 'Dragan Milojević',
+                    path: '/dramil.jpg',
+                    link: 'https://www.youtube.com/watch?v=11Ue-nPi6CU',
                 },
                 {
-                    title: 'title4',
-                    path: '/thumb3.jpg',
+                    title: 'Miodrag Dabižić',
+                    path: '/midrdab.jpg',
+                    link: 'https://www.youtube.com/watch?v=Opgk2dnG_5k',
                 },
             ],
         },
         {
             images: [
                 {
-                    title: 'title11',
-                    path: '/thumb4.jpg',
+                    title: 'Damjan Knežević',
+                    path: '/damkne.jpg',
+                    link: 'https://www.youtube.com/watch?v=W_EXpnaj750&t=130s',
                 },
                 {
-                    title: 'title22',
-                    path: '/thumb1.jpg',
+                    title: 'VK BANJICA I VK ZEMUN',
+                    path: '/banzem.jpg',
+                    link: 'https://www.youtube.com/watch?v=I5nHwI_KwyM',
                 },
                 {
                     title: 'title33',
