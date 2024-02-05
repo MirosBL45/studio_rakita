@@ -9,7 +9,7 @@ export const workData = {
                 },
                 {
                     title: 'title2',
-                    path: '/thumb2.jpg',
+                    path: '/miodab.jpg',
                 },
                 {
                     title: 'title3',
@@ -17,7 +17,7 @@ export const workData = {
                 },
                 {
                     title: 'title4',
-                    path: '/thumb4.jpg',
+                    path: '/thumb3.jpg',
                 },
             ],
         },
