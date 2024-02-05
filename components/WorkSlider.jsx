@@ -25,7 +25,7 @@ function WorkSlider({ language }) {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[380px] sm:h-[480px]"
+      className="h-[240px] sm:h-[480px]"
     >
       {workData.slides.map((slide, slideIndex) => (
         <SwiperSlide key={slideIndex}>

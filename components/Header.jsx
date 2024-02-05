@@ -1,6 +1,3 @@
-// next image
-import Image from 'next/image';
-
 // next link
 import Link from 'next/link';
 
@@ -17,12 +14,10 @@ function Header() {
         <div className="flex flex-row justify-between items-center gap-x-6 pt-[10px]">
           {/* logo */}
           <Link href={'/'}>
-            <Image
+            <img
+              className="h-[60px] sm:h-[100px]"
               src={'/rakita-logo-white.png'}
-              width={120}
-              height={28}
               alt="rakita-logo"
-              priority={true}
             />
           </Link>
           {/* socials */}
