@@ -1,23 +1,23 @@
 // data
-import { workData } from "../data/workData";
+import { workData } from '../data/workData';
 // icon
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight } from 'react-icons/bs';
 
 // next image
-import Image from "next/image";
+import Image from 'next/image';
 
 // swiper react components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
 
 // required modules
-import { Pagination } from "swiper";
+import { Pagination } from 'swiper';
 
-function WorkSlider() {
+function WorkSlider({ language }) {
   return (
     <Swiper
       spaceBetween={10}
