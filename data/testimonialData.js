@@ -22,3 +22,13 @@ export const testimonialData = [
       '3Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
 ];
+
+export const testimonialHeadline = {
+  part1: 'What clients',
+  part2: 'say about us.',
+}
+
+export const testimonialHeadlineSR = {
+  part1: 'Šta kažu',
+  part2: 'klijenti o nama.',
+}

@@ -1,22 +1,22 @@
-import { testimonialData } from "../data/testimonialData";
+import { testimonialData } from '../data/testimonialData';
 // icon
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft } from 'react-icons/fa';
 
 // next image
-import Image from "next/image";
+import Image from 'next/image';
 
 // swiper react components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 // swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // required modules
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination } from 'swiper';
 
-function TestimonialSlider() {
+function TestimonialSlider({ language }) {
   return (
     <Swiper
       navigation={true}
