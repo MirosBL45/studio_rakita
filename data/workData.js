@@ -5,22 +5,22 @@ export const workData = {
             images: [
                 {
                     title: 'Aleksandar Dimić',
-                    path: '/dimale.jpg',
+                    path: '/works/dimale.jpg',
                     link: 'https://www.youtube.com/watch?v=MMkDjw_c2XA',
                 },
                 {
                     title: 'Zemunski kamerni orkestar',
-                    path: '/kamork.jpg',
+                    path: '/works/kamork.jpg',
                     link: 'https://www.youtube.com/watch?v=oPS11rDEqYI',
                 },
                 {
-                    title: 'Dragan Milojević',
-                    path: '/dramil.jpg',
-                    link: 'https://www.youtube.com/watch?v=11Ue-nPi6CU',
+                    title: 'Prvenstvo Srbije gimnastika, grupne vežbe',
+                    path: '/works/svilajn.jpg',
+                    link: 'https://www.youtube.com/watch?v=6hhrdkUOp3c',
                 },
                 {
                     title: 'Miodrag Dabižić',
-                    path: '/midrdab.jpg',
+                    path: '/works/midrdab.jpg',
                     link: 'https://www.youtube.com/watch?v=Opgk2dnG_5k',
                 },
             ],
@@ -29,21 +29,23 @@ export const workData = {
             images: [
                 {
                     title: 'Damjan Knežević',
-                    path: '/damkne.jpg',
+                    path: '/works/damkne.jpg',
                     link: 'https://www.youtube.com/watch?v=W_EXpnaj750&t=130s',
                 },
                 {
                     title: 'VK BANJICA I VK ZEMUN',
-                    path: '/banzem.jpg',
+                    path: '/works/banzem.jpg',
                     link: 'https://www.youtube.com/watch?v=I5nHwI_KwyM',
                 },
                 {
-                    title: 'title33',
-                    path: '/thumb2.jpg',
+                    title: 'Dragan Milojević',
+                    path: '/works/dramil.jpg',
+                    link: 'https://www.youtube.com/watch?v=11Ue-nPi6CU',
                 },
                 {
-                    title: 'title44',
-                    path: '/thumb3.jpg',
+                    title: 'FK CUKARICKI ACS JUNIORUL',
+                    path: '/works/cukjun.jpg',
+                    link: 'https://www.youtube.com/watch?v=8cvYm5e_Gy8',
                 },
             ],
         },
