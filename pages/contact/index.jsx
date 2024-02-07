@@ -4,6 +4,8 @@ import { BsArrowRight } from 'react-icons/bs';
 // framer-motion
 import { motion } from 'framer-motion';
 
+import { SERVICE_BASE, TEMPLATE_BASE, PUBLIC_BASE } from '../../data/constants';
+
 // variants
 import { fadeIn } from '../../variants';
 
@@ -19,16 +21,12 @@ function Contact() {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e) {
+  function sendEmail(e) {
     e.preventDefault();
+
     setLoading(true);
     emailjs
-      .sendForm(
-        'service_i3rs6cc',
-        'template_oonxz7s',
-        formRef.current,
-        'o2jP32BE4AwKYKPs8'
-      )
+      .sendForm(SERVICE_BASE, TEMPLATE_BASE, formRef.current, PUBLIC_BASE)
       .then(
         () => {
           setLoading(false);
@@ -64,12 +62,15 @@ function Contact() {
             exit="hidden"
             className="h2"
           >
-            Let`s <span className="text-accent">connect.</span>
+            {language === 'eng' ? 'You have' : 'Imate neko'}{' '}
+            <span className="text-accent">
+              {language === 'eng' ? 'a question' : 'pitanje'}?
+            </span>
           </motion.h2>
           {/* form */}
           <motion.form
             ref={formRef}
-            onSubmit={handleSubmit}
+            onSubmit={sendEmail}
             variants={fadeIn('up', 0.4)}
             initial="hidden"
             animate="show"
@@ -83,12 +84,14 @@ function Contact() {
                 type="text"
                 placeholder="name"
                 className="input"
+                required
               />
               <input
                 name="user_email"
                 type="email"
                 placeholder="email"
                 className="inputEmail"
+                required
               />
             </div>
             <input
@@ -96,11 +99,13 @@ function Contact() {
               type="text"
               placeholder="subject"
               className="input"
+              required
             />
             <textarea
               name="message"
               className="textarea"
               placeholder="Message"
+              required
             ></textarea>
             <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
