@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 // data
-import { blogData } from '../../data/blogsData';
+import { blogs } from '../../data/blogsData';
 
 // framer-motion
 import { motion } from 'framer-motion';
@@ -29,8 +29,8 @@ function Blog() {
           animate="show"
           exit="hidden"
         >
-          {blogData.map((blog) => (
-            <Link key={blog.id} href={blog.url}>
+          {blogs.map((blog) => (
+            <Link href={`/blog/${blog.slug}`}>
               <h3>{blog.title}</h3>
               <p>{blog.description}</p>
             </Link>
