@@ -3,7 +3,7 @@ import { CgCamera } from "react-icons/cg";
 import { GiDeliveryDrone } from "react-icons/gi";
 import { BsGearWideConnected } from "react-icons/bs";
 import { MdLiveTv } from "react-icons/md";
-import { MdOutlinePeople } from "react-icons/md";
+import { MdOutlinePeople, MdOutlinePhotoCamera } from "react-icons/md";
 
 // data
 export const serviceDataMain = {
@@ -58,7 +58,12 @@ export const serviceDataSR = [
   {
     icon: <BsGearWideConnected />,
     title: 'Video montaža',
-    description: 'Naša veština u video montaži optimizuje tok i ritam vašeg videa, a ističe ključne trenutke, stvarajući emotivno povezanu celinu, čineći ih profesionalnim.',
+    description: 'Naša veština u video montaži optimizuje tok i ritam vašeg videa, a ističe ključne trenutke, stvarajući emotivno povezanu celinu, čineći ih profesionalnim i kvalitetnim.',
+  },
+  {
+    icon: <MdOutlinePhotoCamera />,
+    title: 'Fotografisanje',
+    description: 'Fotografije snimljene vrhunskom opremom pružaju neograničene mogućnosti za upijanje svake nijanse svetla kao i svih emocija vašeg događaja.',
   },
   {
     icon: <MdLiveTv />,

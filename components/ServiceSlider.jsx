@@ -1,5 +1,6 @@
 // data
-import { serviceData, serviceDataSR } from '../data/serviceData';
+import { serviceDataSR } from '../data/serviceData';
+// import { serviceData, serviceDataSR } from '../data/serviceData';
 
 // swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,7 +13,8 @@ import 'swiper/css/pagination';
 // required modules
 import { FreeMode, Pagination } from 'swiper';
 
-function ServiceSlider({ language }) {
+function ServiceSlider() {
+  // function ServiceSlider({ language }) {
   return (
     <Swiper
       breakpoints={{
@@ -32,13 +34,12 @@ function ServiceSlider({ language }) {
       modules={[FreeMode, Pagination]}
       className="h-[240px] sm:h-[340px]"
     >
-      {language === 'eng'
+      {/* {language === 'eng'
         ? serviceData.map((item, itemIndex) => (
             <SwiperSlide key={itemIndex}>
               <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
-                {/* icon */}
                 <div className="text-3xl text-accent mb-4">{item.icon}</div>
-                {/* title & description */}
+
                 <div className="mb-4">
                   <div className="mb-2 text-lg">{item.title}</div>
                   <p className="max-w-[350px] text-sm">{item.description}</p>
@@ -49,16 +50,27 @@ function ServiceSlider({ language }) {
         : serviceDataSR.map((item, itemIndex) => (
             <SwiperSlide key={itemIndex}>
               <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
-                {/* icon */}
                 <div className="text-3xl text-accent mb-4">{item.icon}</div>
-                {/* title & description */}
+
                 <div className="mb-4">
                   <div className="mb-2 text-lg">{item.title}</div>
                   <p className="max-w-[350px] text-sm">{item.description}</p>
                 </div>
               </div>
             </SwiperSlide>
-          ))}
+          ))} */}
+      {serviceDataSR.map((item, itemIndex) => (
+        <SwiperSlide key={itemIndex}>
+          <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
+            <div className="text-3xl text-accent mb-4">{item.icon}</div>
+
+            <div className="mb-4">
+              <div className="mb-2 text-lg">{item.title}</div>
+              <p className="max-w-[350px] text-sm">{item.description}</p>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 }
