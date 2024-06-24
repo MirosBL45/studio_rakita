@@ -1,8 +1,9 @@
 // icons
 import { CgCamera } from "react-icons/cg";
 import { GiDeliveryDrone } from "react-icons/gi";
-import { SiAdobepremierepro } from "react-icons/si";
+import { SiAdobepremierepro, SiAdobephotoshop, SiFigma } from "react-icons/si";
 import { TbSquareLetterV } from "react-icons/tb";
+import { MdOutlinePhotoCamera } from "react-icons/md";
 
 //  data
 export const aboutData = [
@@ -90,6 +91,32 @@ export const aboutDataSR = [
           {
             iconThis: <SiAdobepremierepro key="premierepro" />,
             title: "Adobe Premiere Pro"
+          },
+        ],
+      },
+      {
+        title: "Fotografisanje:",
+        icons: [
+          {
+            iconThis: <MdOutlinePhotoCamera key="PhotoCamera" />,
+            title: "Foto-aparatom"
+          },
+          {
+            iconThis: <GiDeliveryDrone key="drone" />,
+            title: "Dronom"
+          },
+        ],
+      },
+      {
+        title: "Obrada fotografija:",
+        icons: [
+          {
+            iconThis: <SiAdobephotoshop key="Adobephotoshop" />,
+            title: "Adobe Photoshop"
+          },
+          {
+            iconThis: <SiFigma key="SiFigma" />,
+            title: "Figma"
           },
         ],
       },
