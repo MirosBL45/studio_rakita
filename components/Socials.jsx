@@ -16,11 +16,12 @@ function Socials({ language, setLanguage }) {
             className="hover:text-accent transition-all duration-300"
             rel="noopener noreferrer"
             target="_blank"
-            title={
-              language === 'eng'
-                ? 'Visit Our YouTube channel'
-                : 'Pogledajte Naš YouTube kanal'
-            }
+            title={'Pogledajte Naš YouTube kanal'}
+            // title={
+            //   language === 'eng'
+            //     ? 'Visit Our YouTube channel'
+            //     : 'Pogledajte Naš YouTube kanal'
+            // }
           >
             <RiYoutubeLine />
           </Link>
@@ -29,11 +30,12 @@ function Socials({ language, setLanguage }) {
             className="hover:text-accent transition-all duration-300"
             rel="noopener noreferrer"
             target="_blank"
-            title={
-              language === 'eng'
-                ? 'Visit Us on Instagram'
-                : 'Pogledajte Nas na Instagramu'
-            }
+            title={'Pogledajte Nas na Instagramu'}
+            // title={
+            //   language === 'eng'
+            //     ? 'Visit Us on Instagram'
+            //     : 'Pogledajte Nas na Instagramu'
+            // }
           >
             <RiInstagramLine />
           </Link>
@@ -42,11 +44,12 @@ function Socials({ language, setLanguage }) {
             className="hover:text-accent transition-all duration-300"
             rel="noopener noreferrer"
             target="_blank"
-            title={
-              language === 'eng'
-                ? 'Visit Our Facebook account'
-                : 'Pogledajte Naš Facebook nalog'
-            }
+            title={'Pogledajte Naš Facebook nalog'}
+            // title={
+            //   language === 'eng'
+            //     ? 'Visit Our Facebook account'
+            //     : 'Pogledajte Naš Facebook nalog'
+            // }
           >
             <RiFacebookLine />
           </Link>

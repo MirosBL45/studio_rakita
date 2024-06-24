@@ -28,6 +28,16 @@ function Testimonials() {
           exit="hidden"
           className="h2 mb-8 xl:mb-0"
         >
+          {testimonialHeadlineSR.part1}{' '}
+          <span className="text-accent">{testimonialHeadlineSR.part2}</span>
+        </motion.h2>
+        {/* <motion.h2
+          variants={fadeIn('up', 0.2)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="h2 mb-8 xl:mb-0"
+        >
           {language === 'eng'
             ? testimonialHeadline.part1
             : testimonialHeadlineSR.part1}{' '}
@@ -36,7 +46,7 @@ function Testimonials() {
               ? testimonialHeadline.part2
               : testimonialHeadlineSR.part2}
           </span>
-        </motion.h2>
+        </motion.h2> */}
         {/* slider */}
         <motion.div
           variants={fadeIn('up', 0.4)}

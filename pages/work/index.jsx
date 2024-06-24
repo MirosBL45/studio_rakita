@@ -28,7 +28,8 @@ function Work() {
               exit="hidden"
               className="h2 xl:mt-12"
             >
-              {language === 'eng' ? workDataText.title : workDataTextSR.title}
+              {workDataTextSR.title}
+              {/* {language === 'eng' ? workDataText.title : workDataTextSR.title} */}
               <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
@@ -38,7 +39,8 @@ function Work() {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              {language === 'eng' ? workDataText.text : workDataTextSR.text}
+              {workDataTextSR.text}
+              {/* {language === 'eng' ? workDataText.text : workDataTextSR.text} */}
             </motion.p>
           </div>
           {/* slider */}
@@ -49,7 +51,8 @@ function Work() {
             exit="hidden"
             className="w-full xl:max-w-[65%]"
           >
-            <WorkSlider language={language} />
+            <WorkSlider />
+            {/* <WorkSlider language={language} /> */}
           </motion.div>
         </div>
       </div>
