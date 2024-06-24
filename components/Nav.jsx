@@ -1,5 +1,6 @@
 // data
-import { navData, navDataSR } from '../data/navData';
+import { navDataSR } from '../data/navData';
+// import { navData, navDataSR } from '../data/navData';
 
 // next link
 import Link from 'next/link';
@@ -8,10 +9,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 // LanguageContext
-import { useLanguage } from '../components/LanguageContext';
+// import { useLanguage } from '../components/LanguageContext';
 
 function Nav() {
-  const { language } = useLanguage();
+  // const { language } = useLanguage();
   const router = useRouter();
   const pathname = router.pathname;
 

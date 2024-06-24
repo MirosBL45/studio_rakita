@@ -4,9 +4,10 @@ import Link from 'next/link';
 // icons
 import { RiYoutubeLine, RiInstagramLine, RiFacebookLine } from 'react-icons/ri';
 
-import { BsGlobeAmericas } from 'react-icons/bs';
+// import { BsGlobeAmericas } from 'react-icons/bs';
 
-function Socials({ language, setLanguage }) {
+function Socials() {
+  // function Socials({ language, setLanguage }) {
   return (
     <>
       <div className="flex items-center gap-x-14">
@@ -54,7 +55,7 @@ function Socials({ language, setLanguage }) {
             <RiFacebookLine />
           </Link>
         </div>
-        <div
+        {/* <div
           onClick={() => {
             if (language === 'srb') {
               setLanguage('eng');
@@ -68,7 +69,7 @@ function Socials({ language, setLanguage }) {
           className="text-lg lg:text-2xl cursor-pointer z-50 text-accent2 hover:text-accent transition-all duration-300"
         >
           <BsGlobeAmericas />
-        </div>
+        </div> */}
       </div>
     </>
   );
