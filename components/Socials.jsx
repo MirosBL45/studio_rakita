@@ -4,10 +4,7 @@ import Link from 'next/link';
 // icons
 import { RiYoutubeLine, RiInstagramLine, RiFacebookLine } from 'react-icons/ri';
 
-// import { BsGlobeAmericas } from 'react-icons/bs';
-
 function Socials() {
-  // function Socials({ language, setLanguage }) {
   return (
     <>
       <div className="flex items-center gap-x-14">
@@ -18,11 +15,6 @@ function Socials() {
             rel="noopener noreferrer"
             target="_blank"
             title={'Pogledajte Naš YouTube kanal'}
-            // title={
-            //   language === 'eng'
-            //     ? 'Visit Our YouTube channel'
-            //     : 'Pogledajte Naš YouTube kanal'
-            // }
           >
             <RiYoutubeLine />
           </Link>
@@ -32,11 +24,6 @@ function Socials() {
             rel="noopener noreferrer"
             target="_blank"
             title={'Pogledajte Nas na Instagramu'}
-            // title={
-            //   language === 'eng'
-            //     ? 'Visit Us on Instagram'
-            //     : 'Pogledajte Nas na Instagramu'
-            // }
           >
             <RiInstagramLine />
           </Link>
@@ -46,30 +33,10 @@ function Socials() {
             rel="noopener noreferrer"
             target="_blank"
             title={'Pogledajte Naš Facebook nalog'}
-            // title={
-            //   language === 'eng'
-            //     ? 'Visit Our Facebook account'
-            //     : 'Pogledajte Naš Facebook nalog'
-            // }
           >
             <RiFacebookLine />
           </Link>
         </div>
-        {/* <div
-          onClick={() => {
-            if (language === 'srb') {
-              setLanguage('eng');
-            } else {
-              setLanguage('srb');
-            }
-          }}
-          title={
-            language === 'srb' ? 'Translate into English' : 'Prevedi na srpski'
-          }
-          className="text-lg lg:text-2xl cursor-pointer z-50 text-accent2 hover:text-accent transition-all duration-300"
-        >
-          <BsGlobeAmericas />
-        </div> */}
       </div>
     </>
   );

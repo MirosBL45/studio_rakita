@@ -5,7 +5,6 @@ import Avatar from "../components/Avatar";
 
 // data
 import { landingDataSR } from '../data/landingData';
-// import { landingData, landingDataSR } from '../data/landingData';
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -13,12 +12,7 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 
-// LanguageContext
-// import { useLanguage } from "../components/LanguageContext";
-
 function Home() {
-  // const { language } = useLanguage();
-
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
@@ -30,19 +24,12 @@ function Home() {
             animate="show"
             exit="hidden"
           >
-            {/* {language === 'eng' ? (<h1 className="h1">
-              {landingData.title1} <br />
-              <span className="text-accent">{landingData.title2}</span>
-            </h1>) : (<h1 className="h1">
-              {landingDataSR.title1} <br />
-              <span className="text-accent">{landingDataSR.title2}</span>
-            </h1>)} */}
             <h1 className="h1">
               {landingDataSR.title1} <br />
               <span className="text-accent">{landingDataSR.title2}</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[50px]">
-              {/* {language === 'eng' ? landingData.description : landingDataSR.description} */}
+
               {landingDataSR.description}
             </p>
           </motion.div>
@@ -54,10 +41,7 @@ function Home() {
             exit="hidden"
             className="flex"
           >
-            <ProjectsBtn
-              // textOfButton={language === 'eng' ? landingData.button : landingDataSR.button} 
-              textOfButton={landingDataSR.button}
-            />
+            <ProjectsBtn textOfButton={landingDataSR.button} />
           </motion.div>
         </div>
       </div>

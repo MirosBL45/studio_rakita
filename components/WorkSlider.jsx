@@ -21,7 +21,6 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper';
 
 function WorkSlider() {
-  // function WorkSlider({ language }) {
   return (
     <Swiper
       spaceBetween={10}
@@ -59,14 +58,10 @@ function WorkSlider() {
                     <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-2 group-hover:sm:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                       <div className="text-primary font-bold flex items-center flex-col sm:flex-row gap-x-2 text-[13px] tracking-[0.2em]">
                         {/* title part 1 */}
-                        <div className="delay-100">
-                          {'POGLEDAJ'}
-                          {/* {language === 'eng' ? 'LIVE' : 'POGLEDAJ'} */}
-                        </div>
+                        <div className="delay-100">{'POGLEDAJ'}</div>
                         {/* title part 2 */}
                         <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
                           {'VIDEO'}
-                          {/* {language === 'eng' ? 'PROJECT' : 'VIDEO'} */}
                         </div>
                         {/* icon */}
                         <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">

@@ -16,7 +16,7 @@ import 'swiper/css/pagination';
 // required modules
 import { Navigation, Pagination } from 'swiper';
 
-function TestimonialSlider({ language }) {
+function TestimonialSlider() {
   return (
     <Swiper
       navigation={true}

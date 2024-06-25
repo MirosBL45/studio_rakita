@@ -2,18 +2,15 @@
 import WorkSlider from '../../components/WorkSlider';
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
-import { useLanguage } from '../../components/LanguageContext';
 
 // framer-motion
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
 // data
-import { workDataText, workDataTextSR } from '../../data/workData';
+import { workDataTextSR } from '../../data/workData';
 
 function Work() {
-  const { language } = useLanguage();
-
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <Circles />
@@ -29,7 +26,6 @@ function Work() {
               className="h2 xl:mt-12"
             >
               {workDataTextSR.title}
-              {/* {language === 'eng' ? workDataText.title : workDataTextSR.title} */}
               <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
@@ -40,7 +36,6 @@ function Work() {
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
               {workDataTextSR.text}
-              {/* {language === 'eng' ? workDataText.text : workDataTextSR.text} */}
             </motion.p>
           </div>
           {/* slider */}
@@ -52,7 +47,6 @@ function Work() {
             className="w-full xl:max-w-[65%]"
           >
             <WorkSlider />
-            {/* <WorkSlider language={language} /> */}
           </motion.div>
         </div>
       </div>

@@ -13,11 +13,7 @@ import { fadeIn } from '../../variants';
 import emailjs from '@emailjs/browser';
 import { useState, useRef } from 'react';
 
-// LanguageContext
-// import { useLanguage } from '../../components/LanguageContext';
-
 function Contact() {
-  // const { language } = useLanguage();
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
 
@@ -30,21 +26,11 @@ function Contact() {
       .then(
         () => {
           setLoading(false);
-          // if (language === 'eng') {
-          //   alert('Thank you. I will get back to you as soon as possible.');
-          // } else {
-          //   alert('Hvala Vam. Javiću se čim budem u prilici.');
-          // }
           alert('Hvala Vam. Javiću se čim budem u prilici.');
         },
         (error) => {
           setLoading(false);
           console.log(error);
-          // if (language === 'eng') {
-          //   alert('Somthing went wrong. Please, try again.');
-          // } else {
-          //   alert('Nešto ne radi. Molimo probajte ponovo.');
-          // }
           alert('Nešto ne radi. Molimo probajte ponovo.');
         }
       );
@@ -64,12 +50,7 @@ function Contact() {
             exit="hidden"
             className="h2"
           >
-            {'Imate neko'}{' '}
-            {/* {language === 'eng' ? 'You have' : 'Imate neko'}{' '} */}
-            <span className="text-accent">
-              {'pitanje'}?
-              {/* {language === 'eng' ? 'a question' : 'pitanje'}? */}
-            </span>
+            {'Imate neko'} <span className="text-accent">{'pitanje'}?</span>
           </motion.h2>
 
           <motion.p
@@ -130,13 +111,6 @@ function Contact() {
             <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 py-2 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 {loading ? 'Šalje se...' : 'Pošalji'}
-                {/* {language === 'eng'
-                  ? loading
-                    ? 'Sending...'
-                    : 'Let`s talk'
-                  : loading
-                  ? 'Šalje se...'
-                  : 'Budimo u kontaktu'} */}
               </span>
               <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-500 absolute text-[32px] text-accent" />
             </button>

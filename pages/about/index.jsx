@@ -1,8 +1,6 @@
 // data
 import {
-  // aboutData,
   aboutDataSR,
-  // aboutDataText,
   aboutDataTextSR,
   years,
   clients,
@@ -23,11 +21,7 @@ import { fadeIn } from '../../variants';
 // counter
 import CountUp from 'react-countup';
 
-// LanguageContext
-// import { useLanguage } from '../../components/LanguageContext';
-
 function About() {
-  // const { language } = useLanguage();
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
@@ -53,17 +47,6 @@ function About() {
             exit="hidden"
             className="text-xl mb-3 md:h2"
           >
-            {/* {language === 'eng' ? (
-              <div>
-                {aboutDataText.title1}{' '}
-                <span className="text-accent">{aboutDataText.title2}</span>
-              </div>
-            ) : (
-              <div>
-                {aboutDataTextSR.title1}{' '}
-                <span className="text-accent">{aboutDataTextSR.title2}</span>
-              </div>
-            )} */}
             <div>
               {aboutDataTextSR.title1}{' '}
               <span className="text-accent">{aboutDataTextSR.title2}</span>
@@ -76,9 +59,6 @@ function About() {
             exit="hidden"
             className="text-[14px] md:text-xl max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            {/* {language === 'eng'
-              ? aboutDataText.description
-              : aboutDataTextSR.description} */}
             {aboutDataTextSR.description}
           </motion.p>
           {/* counters */}
@@ -96,9 +76,6 @@ function About() {
                   <CountUp start={0} end={years} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  {/* {language === 'eng'
-                    ? aboutDataText.years.text
-                    : aboutDataTextSR.years.text} */}
                   {aboutDataTextSR.years.text}
                 </div>
               </div>
@@ -108,9 +85,6 @@ function About() {
                   <CountUp start={0} end={clients} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  {/* {language === 'eng'
-                    ? aboutDataText.clients.text
-                    : aboutDataTextSR.clients.text} */}
                   {aboutDataTextSR.clients.text}
                 </div>
               </div>
@@ -120,9 +94,6 @@ function About() {
                   <CountUp start={0} end={projects} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  {/* {language === 'eng'
-                    ? aboutDataText.projects.text
-                    : aboutDataTextSR.projects.text} */}
                   {aboutDataTextSR.projects.text}
                 </div>
               </div>
@@ -132,9 +103,6 @@ function About() {
                   <CountUp start={0} end={gratitude} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  {/* {language === 'eng'
-                    ? aboutDataText.gratitude.text
-                    : aboutDataTextSR.gratitude.text} */}
                   {aboutDataTextSR.gratitude.text}
                 </div>
               </div>
@@ -151,35 +119,6 @@ function About() {
         >
           {/* for main title of about */}
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-[32]">
-            {/* {language === 'eng'
-              ? aboutData.map((item, itemIndex) => (
-                  <div
-                    key={itemIndex}
-                    className={`cursor-pointer capitalize xl:text-lg relative after:w-[100%] after:h-[2px] after:absolute after:-bottom-1 after:left-0 ${
-                      mainIndex === itemIndex &&
-                      'text-accent after:w-[100%] after:transition-all after:duration-300 after:bg-accent'
-                    }`}
-                    onClick={() => {
-                      setMainIndex(itemIndex);
-                    }}
-                  >
-                    {item.title}
-                  </div>
-                ))
-              : aboutDataSR.map((item, itemIndex) => (
-                  <div
-                    key={itemIndex}
-                    className={`cursor-pointer capitalize xl:text-lg relative after:w-[100%] after:h-[2px] after:absolute after:-bottom-1 after:left-0 ${
-                      mainIndex === itemIndex &&
-                      'text-accent after:w-[100%] after:transition-all after:duration-300 after:bg-accent'
-                    }`}
-                    onClick={() => {
-                      setMainIndex(itemIndex);
-                    }}
-                  >
-                    {item.title}
-                  </div>
-                ))} */}
             {aboutDataSR.map((item, itemIndex) => (
               <div
                 key={itemIndex}
@@ -197,57 +136,6 @@ function About() {
           </div>
           {/* for content */}
           <div className="py-2 xl:py-6 flex flex-col gap-y-4 xl:gap-y-4 items-center xl:items-start">
-            {/* {language === 'eng'
-              ? aboutData[mainIndex].info.map((item, itemIndex) => (
-                  <div
-                    key={itemIndex}
-                    className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-                  >
-                    <div className="font-light xl:max-w-[440px] md:mb-0">
-                      {item.title}
-                    </div>
-
-                    {item.stage && <div>{item.stage}</div>}
-                    <div className="flex gap-x-4">
-                      {item.icons?.map((icon, iconIndex) => (
-                        <div
-                          key={iconIndex}
-                          className="text-3xl text-white flex items-center gap-x-[10px]"
-                        >
-                          {icon.iconThis}
-                          <span className="text-sm text-white">
-                            {icon.title}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))
-              : aboutDataSR[mainIndex].info.map((item, itemIndex) => (
-                  <div
-                    key={itemIndex}
-                    className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-                  >
-                    <div className="font-light xl:max-w-[440px] md:mb-0">
-                      {item.title}
-                    </div>
-
-                    {item.stage && <div>{item.stage}</div>}
-                    <div className="flex gap-x-[30px]">
-                      {item.icons?.map((icon, iconIndex) => (
-                        <div
-                          key={iconIndex}
-                          className="text-3xl text-white flex items-center gap-x-[10px]"
-                        >
-                          {icon.iconThis}
-                          <span className="text-sm text-white">
-                            {icon.title}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))} */}
             {aboutDataSR[mainIndex].info.map((item, itemIndex) => (
               <div
                 key={itemIndex}
