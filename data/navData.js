@@ -11,38 +11,20 @@ import {
 import { ImBlog } from "react-icons/im";
 
 // nav data
-export const navData = [
-  { name: "home", path: "/", icon: <HiHome /> },
-  { name: "about", path: "/about", icon: <HiUser /> },
-  { name: "services", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "work", path: "/work", icon: <HiViewColumns /> },
-  { name: "blog", path: "/blog", icon: <ImBlog /> },
-  {
-    name: "testimonials",
-    path: "/testimonials",
-    icon: <HiChatBubbleBottomCenterText />,
-  },
-  {
-    name: "contact",
-    path: "/contact",
-    icon: <HiEnvelope />,
-  },
-];
-
 export const navDataSR = [
   { name: "početna", path: "/", icon: <HiHome /> },
-  { name: "o nama", path: "/about", icon: <HiUser /> },
-  { name: "naše usluge", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "naši radovi", path: "/work", icon: <HiViewColumns /> },
+  { name: "o nama", path: "/o_nama", icon: <HiUser /> },
+  { name: "naše usluge", path: "/usluge", icon: <HiRectangleGroup /> },
+  { name: "naši radovi", path: "/radovi", icon: <HiViewColumns /> },
   { name: "blog", path: "/blog", icon: <ImBlog /> },
   {
-    name: "preporuke",
-    path: "/testimonials",
+    name: "Klijenti o nama",
+    path: "/klijenti_o_nama",
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
     name: "kontakt",
-    path: "/contact",
+    path: "/kontakt",
     icon: <HiEnvelope />,
   },
 ];

@@ -6,64 +6,6 @@ import { TbSquareLetterV } from "react-icons/tb";
 import { MdOutlinePhotoCamera } from "react-icons/md";
 
 //  data
-export const aboutData = [
-  {
-    title: "skills",
-    info: [
-      {
-        title: "Video Recording:",
-        icons: [
-          {
-            iconThis: <CgCamera key="camera" />,
-            title: "Camera"
-          },
-          {
-            iconThis: <GiDeliveryDrone key="drone" />,
-            title: "Drone"
-          },
-        ],
-      },
-      {
-        title: "Video editing:",
-        icons: [
-          {
-            iconThis: <TbSquareLetterV key="vegas" />,
-            title: "Vegas Pro"
-          },
-          {
-            iconThis: <SiAdobepremierepro key="premierepro" />,
-            title: "Adobe Premiere Pro"
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "gratitude",
-    info: [
-      {
-        title: "Many years of work have brought us a large number of recognitions, starting from sports clubs, all the way to newlyweds satisfied with their wonderful wedding shots.",
-      },
-    ],
-  },
-  {
-    title: "experience",
-    info: [
-      {
-        title: "We are proud of our many years of experience in filming and editing events - from weddings to sports matches. With each new assignment, we bring a fresh approach and creativity to create videos that leave a lasting impression.",
-      },
-    ],
-  },
-  {
-    title: "Why Us?",
-    info: [
-      {
-        title: "Quality is recognized at first sight as our commitment to delivering top quality in every frame ensures that every moment becomes unforgettable.",
-      },
-    ],
-  },
-];
-
 export const aboutDataSR = [
   {
     title: "veštine",
