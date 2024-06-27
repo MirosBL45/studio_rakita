@@ -15,7 +15,7 @@ export default function BlogPost() {
     <div>
       <h1>{blog.title}</h1>
       {/* <img src={blog.imageUrl} alt={blog.title} /> */}
-      <p>{blog.description}</p>
+      <p>{blog.text}</p>
     </div>
   );
 }
