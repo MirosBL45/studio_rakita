@@ -37,7 +37,7 @@ function Blog() {
           exit="hidden"
           className="h2 mb-8 xl:mb-0"
         >
-          Read our <span className="text-accent">Blog</span>
+          Čitajte naš <span className="text-accent">Blog</span>
         </motion.h2>
         <motion.div
           variants={fadeIn('up', 0.4)}

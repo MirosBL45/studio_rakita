@@ -2,11 +2,11 @@ export const blogs = [
     {
         id: 1,
         slug: "snimanje",
-        title: "video",
+        title: "Video",
         url: "/blog/video",
         image: '/blogImages/camera.webp',
         description: 'Embark on a journey through my collection of dynamic web applications, each meticulously crafted using JavaScript, React, Next.js and Vue.js. These applications showcase my expertise in frontend development and my dedication to creating intuitive and efficient digital solutions.',
-        text: 'aaaaaa Embark on a journey through my collection of dynamic web applications, each meticulously crafted using JavaScript, React, Next.js and Vue.js. These applications showcase my expertise in frontend development and my dedication to creating intuitive and efficient digital solutions.',
+        text: 'qqqqq These applications showcase my expertise in frontend development and my dedication to creating intuitive and efficient digital solutions. aaaaaa Embark on a journey through my collection of dynamic web applications, each meticulously crafted using JavaScript, React, Next.js and Vue.js. These applications showcase my expertise in frontend development and my dedication to creating intuitive and efficient digital solutions.',
         forUrl: 'apps',
         position: 'Customer',
     },

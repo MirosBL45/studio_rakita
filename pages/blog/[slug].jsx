@@ -31,8 +31,8 @@ export default function BlogPost() {
             animate="show"
             exit="hidden"
           >
-            <h1 className="h1 xl:px-6">{blog.title}</h1>
-            <p className="text-base sm:text-lg lg:text-2xl mx-auto xl:mx-0 mb-[20px] xl:mb-[50px] xl:px-6">
+            <h1 className="h1 xl:px-7">{blog.title}</h1>
+            <p className="text-base sm:text-base lg:text-lg mx-auto xl:mx-0 mb-[20px] xl:mb-[50px] xl:px-7">
               {/* <p className="text-base sm:text-lg lg:text-2xl max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-[20px] xl:mb-[50px]"> */}
               {blog.text}
             </p>
@@ -45,7 +45,6 @@ export default function BlogPost() {
               animate="show"
               exit="hidden"
               transition={{ duration: 1, ease: 'easeInOut' }}
-              // className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
             >
               <Image
                 src={blog.image}
@@ -53,7 +52,7 @@ export default function BlogPost() {
                 // width={737}
                 height={678}
                 alt={`${blog.title} Studio Rakita`}
-                className="translate-z-0 xl:px-6"
+                className="translate-z-0 xl:px-7 mx-auto rounded-[100px]"
               />
             </motion.div>
           </div>
