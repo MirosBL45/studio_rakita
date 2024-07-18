@@ -17,11 +17,8 @@ export default function BlogPost() {
   const { slug } = router.query;
   const blog = blogs.find((b) => b.slug === slug);
 
-  if (!blog) {
-    return <div>Blog nije pronađen</div>;
-  }
-
   const isBlogPage = router.pathname.startsWith('/blog/');
+
   useEffect(() => {
     if (isBlogPage) {
       document.body.classList.add('no-overflow');
@@ -33,6 +30,10 @@ export default function BlogPost() {
       document.body.classList.remove('no-overflow');
     };
   }, [isBlogPage]);
+
+  if (!blog) {
+    return <div>Blog nije pronađen</div>;
+  }
 
   return (
     <div className="bg-primary/60 h-full">
