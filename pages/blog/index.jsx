@@ -70,7 +70,7 @@ function Blog() {
                         />
                       </div>
                       {/* name */}
-                      <div className="text-lg">{blog.title}</div>
+                      <div className="text-lg mb-4">{blog.title}</div>
                       {/* titleDesc */}
                       <div className="text-[12px] uppercase font-extralight tracking-widest">
                         {blog.titleDesc}

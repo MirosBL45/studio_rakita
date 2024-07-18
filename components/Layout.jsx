@@ -27,7 +27,7 @@ function Layout({ children }) {
       if (url.startsWith('/blog/')) {
         setTimeout(() => {
           setIsBlogPage(true);
-        }, 3000); // 3000 ms = 3 seconds
+        }, 2000); // 2000 ms = 2 seconds
       } else {
         setIsBlogPage(false);
       }
