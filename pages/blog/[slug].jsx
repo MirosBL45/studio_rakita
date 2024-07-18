@@ -35,16 +35,16 @@ export default function BlogPost() {
     };
   }, [isBlogPage]);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setDelayed(true);
-    }, 1500);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setDelayed(true);
+  //   }, 1500);
 
-    // Clear the timer when the component is disassembled
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  if (!blog && delayed) {
+  if (!blog) {
+    // if (!blog && delayed) {
     return (
       <div className="flex flex-col justify-center w-full h-screen text-center text-3xl sm:text-7xl xl:text-9xl">
         <div>
