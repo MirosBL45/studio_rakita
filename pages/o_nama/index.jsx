@@ -25,7 +25,7 @@ function About() {
   const [mainIndex, setMainIndex] = useState(0);
 
   return (
-    <div className="bg-primary/30 py-32 text-center xl:text-left">
+    <div className="bg-primary/30 xl:py-32 text-center xl:text-left">
       <Circles />
       {/* avatar img */}
       <motion.div

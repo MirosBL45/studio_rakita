@@ -2,7 +2,6 @@ export const blogs = [
     {
         id: 1,
         slug: "snimanje_kamerom",
-        // url: "/blog/video",
         title: "Snimanje kamerom - Umetnost",
         titleDesc: 'Profesionalno snimanje za svaki događaj',
         image: '/blogImages/camera.webp',
@@ -12,7 +11,6 @@ export const blogs = [
     {
         id: 2,
         slug: "fotografisanje",
-        // url: "/blog/pictures",
         title: "Fotografisanje",
         titleDesc: 'Umetnost Beleženja Trenutaka',
         image: '/blogImages/photo.webp',
@@ -21,12 +19,11 @@ export const blogs = [
     },
     {
         id: 3,
-        slug: "dron",
-        // url: "/blog/dron",
-        title: "Dron",
-        titleDesc: 'Kako snimati3',
+        slug: "snimanje_dronom",
+        title: "Snimanje dronom - Nova Perspektiva",
+        titleDesc: 'Snimanje iz ptičje perspektive',
         image: '/blogImages/drone.webp',
-        description: 'Discover a variety of websites that showcase my emphasis on clean design and a smooth user experience, demonstrating my dedication to creating visually appealing and efficient online.',
-        text: 'cccccccc Embark on a journey through my collection of dynamic web applications, each meticulously crafted using JavaScript, React, Next.js and Vue.js. These applications showcase my expertise in frontend development and my dedication to creating intuitive and efficient digital solutions.',
+        description: 'U svetu moderne tehnologije, snimanje dronom je postalo jedan od najuzbudljivijih načina beleženja trenutaka. Ova inovativna tehnika omogućava nam da vidimo svet iz potpuno nove perspektive, nudeći snimke koji su ranije bili nezamislivi. Ali šta je to što snimanje dronom čini toliko posebnim?',
+        text: 'Dronovi su revolucionirali način na koji snimamo događaje i pejzaže. Sposobnost da se podignu visoko u vazduh i uhvate spektakularne kadrove iz ptičje perspektive otvara nove mogućnosti za kreativnost. Bez obzira da li se radi o venčanju na otvorenom, sportskom događaju ili prelepom prirodnom pejzažu, snimanje dronom pruža potpuno novu dimenziju svakom videu. Savremeni dronovi dolaze sa naprednim funkcijama koje omogućavaju visokokvalitetne snimke. Stabilizacija kamere, visoka rezolucija i mogućnost snimanja u 4K kvalitetu su samo neke od karakteristika koje omogućavaju profesionalne rezultate. Osim toga, mnogi dronovi imaju funkcije kao što su automatsko praćenje objekata i programirane rute leta, što omogućava snimanje dinamičnih scena sa lakoćom. Snimanje dronom otvara vrata beskonačnoj kreativnosti. Fotografije i video snimci iz vazduha pružaju jedinstvene uglove i perspektive koje nisu dostupne tradicionalnim metodama snimanja. Kombinacija pejzaža, arhitekture i pokreta ljudi može rezultirati spektakularnim i dramatičnim snimcima. Bilo da se radi o mirnom jutarnjem letu iznad jezera ili uzbudljivom snimanju sportskog događaja, dronovi omogućavaju da se svaki trenutak uhvati na poseban način. Snimanje dronom zahteva stručnost i pažnju na bezbednost. Licencirani operateri dronova znaju kako da upravljaju uređajem sigurno i efikasno, poštujući sve zakonske regulative. Ovo osigurava da snimanje prođe bez problema i da se postignu željeni rezultati. Profesionalni timovi sa iskustvom u snimanju dronom mogu da planiraju i izvedu složene snimke, garantujući visok kvalitet i sigurnost tokom celog procesa. Snimanje dronom ima širok spektar primena. Pored venčanja i sportskih događaja, dronovi se koriste i u filmskoj industriji, za snimanje dokumentarnih filmova, promotivnih videa, kao i u industrijama kao što su građevinarstvo i nekretnine. Njihova sposobnost da brzo i efikasno snime velike površine čini ih idealnim za inspekcije i nadzor. Snimanje dronom predstavlja spoj tehnologije i umetnosti, omogućavajući nam da vidimo svet iz potpuno nove perspektive. Kroz veštu upotrebu dronova, profesionalni snimatelji mogu da stvore zadivljujuće snimke koje ostavljaju trajan utisak. Sledeći put kada planirate neki događaj ili projekt, razmislite o snimanju dronom kao opciji koja može podići vaš video na viši nivo. Nadamo se da vam je ovaj tekst približio čaroliju snimanja dronom i da ste saznali nešto novo o ovoj fascinantnoj tehnici. Ako imate bilo kakva pitanja ili želite da saznate više, slobodno nas kontaktirajte.',
     },
 ];

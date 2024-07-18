@@ -1,7 +1,7 @@
 // /pages/blog/[slug].js
 import { useRouter } from 'next/router';
 import { blogs } from '../../data/blogsData';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 // next link
 import Link from 'next/link';
@@ -16,7 +16,6 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
 export default function BlogPost() {
-  const [delayed, setDelayed] = useState(false);
   const router = useRouter();
   const { slug } = router.query;
   const blog = blogs.find((b) => b.slug === slug);
@@ -35,18 +34,9 @@ export default function BlogPost() {
     };
   }, [isBlogPage]);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setDelayed(true);
-  //   }, 1500);
-
-  //   return () => clearTimeout(timer);
-  // }, []);
-
   if (!blog) {
-    // if (!blog && delayed) {
     return (
-      <div className="flex flex-col justify-center w-full h-screen text-center text-3xl sm:text-7xl xl:text-9xl">
+      <div className="flex flex-col justify-center w-full h-screen text-center text-xs">
         <div>
           <p>Blog nije pronađen</p>
           <Link href={'/blog'}>Probajte neki drugi</Link>
