@@ -2,7 +2,7 @@ export const blogs = [
     {
         id: 1,
         slug: "snimanje_kamerom",
-        title: "Snimanje kamerom - Umetnost",
+        title: "Snimanje kamerom - Umetnost?",
         titleDesc: 'Profesionalno snimanje za svaki događaj',
         image: '/blogImages/camera.webp',
         description: 'U svetu tehnologije i digitalnih medija, snimanje kamerom postalo je mnogo više od običnog beleženja trenutaka. Danas, svaki događaj može biti sačuvan sa neverovatnom preciznošću i umetničkim dodirom. Ali šta je to što snimanje kamerom čini pravom umetnošću?',
@@ -11,7 +11,7 @@ export const blogs = [
     {
         id: 2,
         slug: "fotografisanje",
-        title: "Fotografisanje",
+        title: "Fotografisanje - ko zna?",
         titleDesc: 'Umetnost Beleženja Trenutaka',
         image: '/blogImages/photo.webp',
         description: 'Fotografisanje je mnogo više od jednostavnog pritiskanja dugmeta na kameri. Ono zahteva oštro oko, osećaj za trenutak i kreativnu viziju. U svetu gde su slike postale ključni deo komunikacije, važno je razumeti šta fotografisanje čini pravom umetnošću.',
@@ -20,7 +20,7 @@ export const blogs = [
     {
         id: 3,
         slug: "snimanje_dronom",
-        title: "Snimanje dronom - Nova Perspektiva",
+        title: "Snimanje dronom - Nova Perspektiva?",
         titleDesc: 'Snimanje iz ptičje perspektive',
         image: '/blogImages/drone.webp',
         description: 'U svetu moderne tehnologije, snimanje dronom je postalo jedan od najuzbudljivijih načina beleženja trenutaka. Ova inovativna tehnika omogućava nam da vidimo svet iz potpuno nove perspektive, nudeći snimke koji su ranije bili nezamislivi. Ali šta je to što snimanje dronom čini toliko posebnim?',
