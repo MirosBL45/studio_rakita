@@ -20,12 +20,12 @@ export const serviceDataSR = [
   {
     icon: <GiDeliveryDrone />,
     title: 'Snimanje Dronom',
-    description: 'Dronovi pružaju prelepe panorame, dinamične kadrove iz vazduha i fluidne pokrete, dodajući spektakularan vizuelni efekat i jedinstvenu dimenziju  vašim snimcima.',
+    description: 'Dronovi pružaju prelepe panorame, dinamične kadrove iz vazduha i fluidne pokrete, dodajući prelep vizuelni efekat i jedinstvenu dimenziju  vašim snimcima.',
   },
   {
     icon: <BsGearWideConnected />,
     title: 'Video montaža',
-    description: 'Naša veština u video montaži optimizuje tok i ritam vašeg videa, a ističe ključne trenutke, stvarajući emotivno povezanu celinu, čineći ih profesionalnim i kvalitetnim.',
+    description: 'Naša veština u video montaži optimizuje tok i ritam vašeg videa, ističe ključne trenutke, stvara emotivno povezanu celinu, čineći ih kvalitetnim.',
   },
   {
     icon: <MdOutlinePhotoCamera />,
@@ -40,6 +40,6 @@ export const serviceDataSR = [
   {
     icon: <MdOutlinePeople />,
     title: 'Konsultacije',
-    description: 'Naš tim je ovde da sasluša, razume i pruži personalizovane savete, jer zajedno možemo bolje da oblikujemo vaše zamisli i definišemo jasne korake ka ostvarenju vaših ciljeva.',
+    description: 'Naš tim je ovde da sasluša, razume i pruži svakome personalizovane savete, jer zajedno možemo bolje da oblikujemo vaše zamisli i definišemo jasne ciljeve.',
   },
 ];

@@ -40,24 +40,24 @@ function About() {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row mt-[100px]">
         {/* text part */}
         <div className="flex-1 flex flex-col justify-center">
-          <motion.h2
+          <motion.h1
             variants={fadeIn('right', 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-xl mb-3 md:h2"
+            className="mb-3 h1"
           >
             <div>
               {aboutDataTextSR.title1}{' '}
               <span className="text-accent">{aboutDataTextSR.title2}</span>
             </div>
-          </motion.h2>
+          </motion.h1>
           <motion.p
             variants={fadeIn('right', 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-[14px] md:text-xl max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="text-[16px] md:text-xl max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
             {aboutDataTextSR.description}
           </motion.p>

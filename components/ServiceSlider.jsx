@@ -38,7 +38,7 @@ function ServiceSlider() {
             <div className="text-3xl text-accent mb-4">{item.icon}</div>
             <div className="mb-4">
               <div className="mb-2 text-lg">{item.title}</div>
-              <p className="max-w-[350px] text-sm">{item.description}</p>
+              <p className="max-w-[350px] text-base">{item.description}</p>
             </div>
           </div>
         </SwiperSlide>
