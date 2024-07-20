@@ -88,7 +88,7 @@ export default function BlogPost() {
               className="translate-z-0 mx-auto rounded-[100px] mb-9"
             />
           </motion.div>
-          <div>
+          <section>
             <motion.div
               variants={fadeIn('up', 0.3)}
               initial="hidden"
@@ -96,11 +96,20 @@ export default function BlogPost() {
               exit="hidden"
               transition={{ duration: 1, ease: 'easeInOut' }}
             >
-              <p className="text-base sm:text-base lg:text-lg mx-auto xl:mx-0 mb-[90px] xl:mb-[50px]">
+              <p className="text-base text-left sm:text-base lg:text-lg mx-auto xl:mx-0 mb-[30px] xl:mb-[50px]">
                 {splitContent(blog.text)}
               </p>
+              <p className="text-base text-left sm:text-base lg:text-lg mx-auto xl:mx-0 mb-[90px] xl:mb-[50px]">
+                Ako imate bilo kakva pitanja ili želite da saznate više,
+                slobodno nas
+                <Link className="text-accent" href={'/kontakt'}>
+                  {' '}
+                  kontaktirajte
+                </Link>
+                .
+              </p>
             </motion.div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
