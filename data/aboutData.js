@@ -114,6 +114,7 @@ export const aboutDataTextSR =
   title1: 'Studio Rakita.',
   title2: 'Svaki kadar ima priču.',
   description: 'Razvijali smo se kroz mnogo godina rada na različitim projektima, uživajući u svakom trenutku. Vi uživate jer dobijate prelepe kadrove omiljenih trenutaka, a za nas je radost baviti se onim što volimo. Ova inspiracija nas je podstakla da okupimo grupu ljudi koji sa žarom učestvuju u snimanju najupečatljivijih video zapisa sa vašeg događaja.',
+  description2: 'Iskustvo nas je naučilo da okupimo tim koji strastveno snima vaše najlepše trenutke.',
   years: {
     text: 'Godina iskustva'
   },

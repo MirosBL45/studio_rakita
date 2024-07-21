@@ -17,11 +17,11 @@ export const navDataSR = [
   { name: "naše usluge", path: "/usluge", icon: <HiRectangleGroup /> },
   { name: "naši radovi", path: "/radovi", icon: <HiViewColumns /> },
   { name: "blog", path: "/blog", icon: <ImBlog /> },
-  {
-    name: "Klijenti o nama",
-    path: "/klijenti_o_nama",
-    icon: <HiChatBubbleBottomCenterText />,
-  },
+  // {
+  //   name: "Klijenti o nama",
+  //   path: "/klijenti_o_nama",
+  //   icon: <HiChatBubbleBottomCenterText />,
+  // },
   {
     name: "kontakt",
     path: "/kontakt",

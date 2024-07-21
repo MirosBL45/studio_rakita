@@ -65,8 +65,7 @@ function Contact() {
             <a className="text-accent" href="tel:+381631234567">
               063 123 4567
             </a>{' '}
-            ili putem forme. Odgovorićemo vam u najkraćem mogućem roku. Hvala na
-            interesovanju!
+            ili putem forme.
           </motion.p>
           {/* form */}
           <motion.form
@@ -76,10 +75,10 @@ function Contact() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto"
+            className="flex-1 flex flex-col gap-5 w-full mx-auto"
           >
             {/* input group */}
-            <div className="flex gap-x-6 w-full">
+            <div className="flex gap-x-5 w-full">
               <input
                 name="user_name"
                 type="text"
@@ -95,13 +94,13 @@ function Contact() {
                 required
               />
             </div>
-            <input
+            {/* <input
               name="subject"
               type="text"
               placeholder="Naslov"
               className="input"
               required
-            />
+            /> */}
             <textarea
               name="message"
               className="textarea"

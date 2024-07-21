@@ -59,7 +59,10 @@ function About() {
             exit="hidden"
             className="text-[16px] md:text-xl max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            {aboutDataTextSR.description}
+            <span className="hidden md:block">
+              {aboutDataTextSR.description}
+            </span>
+            <span className="md:hidden">{aboutDataTextSR.description2}</span>
           </motion.p>
           {/* counters */}
           <motion.div
@@ -118,7 +121,7 @@ function About() {
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
           {/* for main title of about */}
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-[32]">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-1 xl:mb-4 z-[32]">
             {aboutDataSR.map((item, itemIndex) => (
               <div
                 key={itemIndex}
@@ -135,13 +138,13 @@ function About() {
             ))}
           </div>
           {/* for content */}
-          <div className="py-2 xl:py-6 flex flex-col gap-y-4 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-1 xl:py-6 flex flex-col gap-y-1 xl:gap-y-4 items-center xl:items-start">
             {aboutDataSR[mainIndex].info.map((item, itemIndex) => (
               <div
                 key={itemIndex}
-                className="mb-[20px] flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                className="mb-[3px] xl:mb-[20px] flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
               >
-                <div className="font-light xl:max-w-[440px] md:mb-0">
+                <div className="font-light xl:max-w-[440px] mb-[2px] md:mb-0">
                   {item.title}
                 </div>
 
