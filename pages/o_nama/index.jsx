@@ -144,7 +144,7 @@ function About() {
                 key={itemIndex}
                 className="mb-[3px] xl:mb-[20px] flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
               >
-                <div className="font-light xl:max-w-[440px] mb-[2px] md:mb-0">
+                <div className="font-light xl:max-w-[440px] mb-[2px] text-accent md:mb-0">
                   {item.title}
                 </div>
 
