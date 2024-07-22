@@ -17,9 +17,10 @@ function Home() {
     <div className="bg-primary/60 h-full">
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+        <section className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.div
-            variants={fadeIn("down", 0.1)}
+            variants={fadeIn("down", 0.05)}
+            // variants={fadeIn("down", 0.1)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -35,7 +36,8 @@ function Home() {
           </motion.div>
           {/* button */}
           <motion.div
-            variants={fadeIn("down", 0.2)}
+            variants={fadeIn("down", 0.05)}
+            // variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -43,7 +45,7 @@ function Home() {
           >
             <ProjectsBtn textOfButton={landingDataSR.button} />
           </motion.div>
-        </div>
+        </section>
       </div>
       {/* image */}
       <div className="w-full h-full absolute right-0 bottom-0">
@@ -53,7 +55,8 @@ function Home() {
         <ParticlesContainer />
         {/* avatar img */}
         <motion.div
-          variants={fadeIn("up", 0.3)}
+          variants={fadeIn("up", 0.05)}
+          // variants={fadeIn("up", 0.3)}
           initial="hidden"
           animate="show"
           exit="hidden"

@@ -39,7 +39,7 @@ function About() {
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row mt-[100px]">
         {/* text part */}
-        <div className="flex-1 flex flex-col justify-center">
+        <section className="flex-1 flex flex-col justify-center">
           <motion.h1
             variants={fadeIn('right', 0.2)}
             initial="hidden"
@@ -111,7 +111,7 @@ function About() {
               </div>
             </div>
           </motion.div>
-        </div>
+        </section>
         {/* info - cards in about section */}
         <motion.div
           variants={fadeIn('left', 0.4)}

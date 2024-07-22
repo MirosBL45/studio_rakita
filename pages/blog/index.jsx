@@ -57,7 +57,7 @@ function Blog() {
                   href={`/blog/${blog.slug}`}
                   className="flex flex-col items-center md:flex-row gap-x-2 h-full px-16"
                 >
-                  <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
+                  <section className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
                     <div className="flex flex-col justify-center text-center">
                       {/* avatar */}
                       <div className="mb-2 mx-auto rounded-full overflow-hidden">
@@ -76,7 +76,7 @@ function Blog() {
                         {blog.titleDesc}
                       </div>
                     </div>
-                  </div>
+                  </section>
 
                   <div className="flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20">
                     {/* message */}

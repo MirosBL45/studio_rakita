@@ -32,7 +32,7 @@ function WorkSlider() {
     >
       {workData.slides.map((slide, slideIndex) => (
         <SwiperSlide key={slideIndex}>
-          <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+          <section className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
             {slide.images.map((image, imageIndex) => (
               <div
                 key={imageIndex}
@@ -73,7 +73,7 @@ function WorkSlider() {
                 </Link>
               </div>
             ))}
-          </div>
+          </section>
         </SwiperSlide>
       ))}
     </Swiper>

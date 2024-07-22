@@ -5,22 +5,22 @@ export const workData = {
             images: [
                 {
                     title: 'Aleksandar Dimić | Studio Rakita',
-                    path: '/works/dimale.jpg',
+                    path: '/works/dimale.webp',
                     link: 'https://www.youtube.com/watch?v=MMkDjw_c2XA',
                 },
                 {
                     title: 'Zemunski kamerni orkestar | Studio Rakita',
-                    path: '/works/kamork.jpg',
+                    path: '/works/kamork.webp',
                     link: 'https://www.youtube.com/watch?v=oPS11rDEqYI',
                 },
                 {
                     title: 'Prvenstvo Srbije gimnastika, grupne vežbe | Studio Rakita',
-                    path: '/works/svilajn.jpg',
+                    path: '/works/svilajn.webp',
                     link: 'https://www.youtube.com/watch?v=6hhrdkUOp3c',
                 },
                 {
                     title: 'Miodrag Dabižić | Studio Rakita',
-                    path: '/works/midrdab.jpg',
+                    path: '/works/midrdab.webp',
                     link: 'https://www.youtube.com/watch?v=Opgk2dnG_5k',
                 },
             ],
@@ -29,22 +29,22 @@ export const workData = {
             images: [
                 {
                     title: 'Damjan Knežević | Studio Rakita',
-                    path: '/works/damkne.jpg',
+                    path: '/works/damkne.webp',
                     link: 'https://www.youtube.com/watch?v=W_EXpnaj750&t=130s',
                 },
                 {
                     title: 'VK Banjica I VK Zemun | Studio Rakita',
-                    path: '/works/banzem.jpg',
+                    path: '/works/banzem.webp',
                     link: 'https://www.youtube.com/watch?v=I5nHwI_KwyM',
                 },
                 {
                     title: 'Dragan Milojević | Studio Rakita',
-                    path: '/works/dramil.jpg',
+                    path: '/works/dramil.webp',
                     link: 'https://www.youtube.com/watch?v=11Ue-nPi6CU',
                 },
                 {
                     title: 'FK Čukarički ACS JuniorUL | Studio Rakita',
-                    path: '/works/cukjun.jpg',
+                    path: '/works/cukjun.webp',
                     link: 'https://www.youtube.com/watch?v=8cvYm5e_Gy8',
                 },
             ],
